@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <section class="w-full bg-[#006A4E] text-white py-3.5 px-4">
+      <div class="container mx-auto flex items-center relative">
+        <div
+          class="font-normal text-[20px] text-[#FEFEFE] leading-[100%] tracking-[0%] w-full lg:text-center"
+        >
+          শিক্ষা, ঐক্য, প্রগতি
+        </div>
+        <div class="flex space-x-4 md:space-x-8 absolute right-[0px] text-3xl">
+          <a
+            href="#"
+            class="text-[#F4F4F4] hover:text-gray-200 transition-colors"
+          >
+            <i class="fa-brands fa-square-facebook"></i>
+          </a>
+          <a
+            href="#"
+            class="text-[#F4F4F4] hover:text-gray-200 transition-colors"
+          >
+            <i class="fa-brands fa-square-instagram"></i>
+          </a>
+          <a
+            href="#"
+            class="text-[#F4F4F4] hover:text-gray-200 transition-colors"
+          >
+            <i class="fa-brands fa-square-twitter"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- header -->
+
+    <header class="w-full text-black bg-[#F4F4F4]">
+      <div
+        class="container mx-auto pe-4 md:py-[19px] py-4 flex items-center justify-between relative"
+      >
+        <!-- Mobile Menu Button -->
+        <button
+          id="mobile-menu-btn"
+          class="md:hidden focus:outline-none ml-auto text-2xl font-bold text-black"
+        >
+          &#9776;
+        </button>
+
+        <!-- Logo Centered -->
+        <div
+          class="flex-shrink-0 absolute top-0 left-0 z-10 left-4 md:left-1/2 transform md:-translate-x-1/2 w-8 h-8 mt-[16px] md:mt-0 md:h-[124px] md:w-[124px]"
+        >
+          <img
+            src="images/bnp-logo.svg"
+            alt="Logo"
+            class="w-full h-full object-cover"
+          />
+        </div>
+
+        <!-- Desktop Navs -->
+        <nav
+          class="hidden md:flex items-center justify-between text-[16px] font-normal w-[40%]"
+        >
+          <ul class="flex w-full justify-between items-center">
+            <li class="cursor-pointer hover:text-red-500">কমিটি তালিকা</li>
+            <li class="cursor-pointer hover:text-red-500">কার্যক্রম</li>
+            <li class="cursor-pointer hover:text-red-500">নিয়মাবলী</li>
+            <li class="cursor-pointer hover:text-red-500">নোটিশ</li>
+          </ul>
+        </nav>
+
+        <nav
+          class="hidden md:flex items-center text-[16px] font-normal w-[40%]"
+        >
+          <ul class="flex w-full justify-between items-center">
+            <li class="cursor-pointer hover:text-red-500">ইতিহাস</li>
+            <li class="cursor-pointer hover:text-red-500">ফটো গ্যালারি</li>
+            <li class="cursor-pointer hover:text-red-500">অভিযোগ</li>
+            <li class="cursor-pointer hover:text-red-500">সাবস্ক্রিপশন</li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- Mobile Menu Dropdown -->
+      <div id="mobile-menu" class="md:hidden hidden pb-4 mt-3 ps-4.5">
+        <ul class="space-y-2 text-[16px] font-normal">
+          <li class="cursor-pointer hover:text-red-500">কমিটি তালিকা</li>
+          <li class="cursor-pointer hover:text-red-500">কার্যক্রম</li>
+          <li class="cursor-pointer hover:text-red-500">নিয়মাবলী</li>
+          <li class="cursor-pointer hover:text-red-500">নোটিশ</li>
+          <li class="cursor-pointer hover:text-red-500">ইতিহাস</li>
+          <li class="cursor-pointer hover:text-red-500">ফটো গ্যালারি</li>
+          <li class="cursor-pointer hover:text-red-500">অভিযোগ</li>
+          <li class="cursor-pointer hover:text-red-500">সাবস্ক্রিপশন</li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- banner with national Martyr -->
+    <!-- <div
+        class="w-full h-[400px] md:h-[500px] 2xl:h-[800px] bg-cover bg-center relative"
+        style="background-image: url('/images/martyrs-memorial.png')"
+      >
+       
+        <div class="absolute inset-0 bg-opacity-50"></div>
+
+      
+
+        <div
+          class="relative container z-0 flex flex-col items-center md:items-start justify-start h-full text-center text-white px-4 md:pt-[141px]"
+        >
+          <div class="container mx-auto">
+            <img
+              src="/images/banner-txt.png"
+              alt="Banner Text"
+              class="max-w-full"
+            />
+          </div>
+        </div>
+      </div> -->
+
+    <!-- Banner Section -->
+    <section
+      class="w-full h-[400px] md:h-[600px] 2xl:h-[800px] bg-cover bg-center relative"
+      style="background-image: url('/images/banner-bg-image.svg')"
+    >
+      <!-- Logo or Text Container -->
+      <div
+        class="relative z-10 flex flex-col items-center md:items-start justify-start h-full w-full px-4 md:px-0 pt-[100px] md:pt-[141px] text-white"
+      >
+        <div class="container mx-auto">
+          <img
+            src="/images/banner-txt.png"
+            alt="Banner Text"
+            class="max-w-full"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- JS for Mobile Menu Toggle -->
+    <script>
+      const btn = document.getElementById("mobile-menu-btn");
+      const menu = document.getElementById("mobile-menu");
+      let isOpen = false;
+
+      btn.addEventListener("click", () => {
+        isOpen = !isOpen;
+        menu.classList.toggle("hidden");
+
+        // Change button text based on toggle
+        btn.innerHTML = isOpen ? "&#10005;" : "&#9776;";
+      });
+    </script>
+  </body>
+  <script
+    src="https://kit.fontawesome.com/ab933b7f51.js"
+    crossorigin="anonymous"
+  ></script>
+</html>
