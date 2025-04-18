@@ -1,5 +1,5 @@
 @font-face {
-  font-family: "Li Ador Noirrit A-V1";
+  font-family: "Li Ador Noir7rit A-V1";
   src: url("/fonts/Ador\ Noirrit\ Web.otf") format("otf"),
     url("/fonts/Ador\ Noirrit\ Web.otf") format("otf");
   font-weight: 400;
@@ -13,11 +13,11 @@
 .swiper-wrapper {
   width: 100%;
   height: max-content !important;
-  padding-bottom: 64px !important;
-  -webkit-transition-timing-function: linear !important;
-  transition-timing-function: linear !important;
   position: relative;
+  margin: 0 auto;
 }
-.swiper-pagination-bullet {
-  background: #4f46e5;
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  display: none;
 }
