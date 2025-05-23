@@ -59,7 +59,9 @@
       </div>
     </section>
     <!-- header -->
-    <header class="w-full text-black bg-[#F4F4F4]">
+    <header
+      class="w-full text-black bg-[#F4F4F4] shadow-[4px_4px_16px_0px_#0000000A]"
+    >
       <div
         class="container mx-auto pe-4 sm:pe-0 md:py-[24px] py-4 flex items-center justify-between relative"
       >
@@ -76,7 +78,7 @@
           class="flex-shrink-0 absolute top-0 md:top-2.5 sm:left-0 z-10 left-4 md:left-1/2 transform md:-translate-x-1/2 w-8 h-8 mt-[16px] md:mt-0 h-10 w-10 md:h-[124px] md:w-[124px]"
         >
           <img
-            src="images/bnp-logo.svg"
+            src="../images/bnp-logo.svg"
             alt="Logo"
             class="w-full h-full object-cover"
           />
@@ -87,10 +89,18 @@
           class="hidden md:flex items-center justify-between text-[16px] font-normal w-[40%]"
         >
           <ul class="flex w-full justify-between items-center">
-            <li class="cursor-pointer hover:text-red-500">কমিটি তালিকা</li>
-            <li class="cursor-pointer hover:text-red-500">কার্যক্রম</li>
-            <li class="cursor-pointer hover:text-red-500">নিয়মাবলী</li>
-            <li class="cursor-pointer hover:text-red-500">নোটিশ</li>
+            <li class="cursor-pointer hover:text-red-500">
+              <a href="/pages/committee.html">কমিটি তালিকা</a>
+            </li>
+            <li class="cursor-pointer hover:text-red-500">
+              <a href="/pages/karjokrom.html">কার্যক্রম</a>
+            </li>
+            <li class="cursor-pointer hover:text-red-500">
+              <a href="/pages/niyomaboli.html">নিয়মাবলী</a>
+            </li>
+            <li class="cursor-pointer hover:text-red-500">
+              <a href="/pages/notice.html">নোটিশ</a>
+            </li>
           </ul>
         </nav>
 
@@ -98,10 +108,18 @@
           class="hidden md:flex items-center text-[16px] font-normal w-[40%]"
         >
           <ul class="flex w-full justify-between items-center">
-            <li class="cursor-pointer hover:text-red-500">ইতিহাস</li>
-            <li class="cursor-pointer hover:text-red-500">ফটো গ্যালারি</li>
-            <li class="cursor-pointer hover:text-red-500">অভিযোগ</li>
-            <li class="cursor-pointer hover:text-red-500">সাবস্ক্রিপশন</li>
+            <li class="cursor-pointer hover:text-red-500">
+              <a href="/pages/history.html">ইতিহাস</a>
+            </li>
+            <li class="cursor-pointer hover:text-red-500">
+              <a href="">ফটো গ্যালারি</a>
+            </li>
+            <li class="cursor-pointer hover:text-red-500">
+              <a href="">অভিযোগ</a>
+            </li>
+            <li class="cursor-pointer hover:text-red-500">
+              <a href="">সাবস্ক্রিপশন</a>
+            </li>
           </ul>
         </nav>
       </div>
@@ -109,14 +127,30 @@
       <!-- Mobile Menu Dropdown -->
       <div id="mobile-menu" class="md:hidden hidden pb-4 mt-3 ps-4.5 sm:ps-5">
         <ul class="space-y-2 text-[16px] font-normal">
-          <li class="cursor-pointer hover:text-red-500">কমিটি তালিকা</li>
-          <li class="cursor-pointer hover:text-red-500">কার্যক্রম</li>
-          <li class="cursor-pointer hover:text-red-500">নিয়মাবলী</li>
-          <li class="cursor-pointer hover:text-red-500">নোটিশ</li>
-          <li class="cursor-pointer hover:text-red-500">ইতিহাস</li>
-          <li class="cursor-pointer hover:text-red-500">ফটো গ্যালারি</li>
-          <li class="cursor-pointer hover:text-red-500">অভিযোগ</li>
-          <li class="cursor-pointer hover:text-red-500">সাবস্ক্রিপশন</li>
+          <li class="cursor-pointer hover:text-red-500">
+            <a href="/pages/committee.html">কমিটি তালিকা</a>
+          </li>
+          <li class="cursor-pointer hover:text-red-500">
+            <a href="/pages/karjokrom.html">কার্যক্রম</a>
+          </li>
+          <li class="cursor-pointer hover:text-red-500">
+            <a href="/pages/niyomaboli.html">নিয়মাবলী</a>
+          </li>
+          <li class="cursor-pointer hover:text-red-500">
+            <a href="/pages/notice.html">নোটিশ</a>
+          </li>
+          <li class="cursor-pointer hover:text-red-500">
+            <a href="/pages/history.html">ইতিহাস</a>
+          </li>
+          <li class="cursor-pointer hover:text-red-500">
+            <a href="">ফটো গ্যালারি</a>
+          </li>
+          <li class="cursor-pointer hover:text-red-500">
+            <a href="">অভিযোগ</a>
+          </li>
+          <li class="cursor-pointer hover:text-red-500">
+            <a href="">সাবস্ক্রিপশন</a>
+          </li>
         </ul>
       </div>
     </header>
@@ -217,7 +251,7 @@
               <div class="swiper-slide">
                 <div class="flex flex-col items-center justify-center">
                   <img
-                    src="images/cmomette/president.png"
+                    src="images/committee/president.png"
                     alt=""
                     class="h-full w-full object-cover rounded-lg"
                   />
@@ -241,7 +275,7 @@
               <div class="swiper-slide">
                 <div class="flex flex-col items-center justify-center">
                   <img
-                    src="images/cmomette/general-secretary.png"
+                    src="images/committee/general-secretary.png"
                     alt=""
                     class="h-full w-full object-cover rounded-lg"
                   />
@@ -265,7 +299,7 @@
               <div class="swiper-slide">
                 <div class="flex flex-col items-center justify-center">
                   <img
-                    src="images/cmomette/join-secretary.png"
+                    src="images/committee/join-secretary.png"
                     alt=""
                     class="h-full w-full object-cover rounded-lg"
                   />
@@ -289,7 +323,7 @@
               <div class="swiper-slide">
                 <div class="flex flex-col items-center justify-center">
                   <img
-                    src="images/cmomette/organizing-secretary.png"
+                    src="images/committee/organizing-secretary.png"
                     alt=""
                     class="h-full w-full object-cover rounded-lg"
                   />
@@ -313,7 +347,7 @@
               <div class="swiper-slide">
                 <div class="flex flex-col items-center justify-center">
                   <img
-                    src="images/cmomette/3_0-removebg-preview.jpg"
+                    src="images/committee/3_0-removebg-preview.jpg"
                     alt=""
                     class="h-full w-full object-cover rounded-lg"
                   />
@@ -337,7 +371,7 @@
               <div class="swiper-slide">
                 <div class="flex flex-col items-center justify-center">
                   <img
-                    src="images/cmomette/president.png"
+                    src="images/committee/president.png"
                     alt=""
                     class="h-full w-full object-cover rounded-lg"
                   />
@@ -824,7 +858,6 @@
             <!-- x -->
             <span class="w-8 h-8">
               <img src="images/icons/red-x.svg" alt="" />
-             
             </span>
           </div>
         </div>

@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/globals.css" />
+
+    <!--  -->
+    <style>
+      /* Optional custom styles */
+      .team-member-card {
+        transition: transform 0.2s ease-in-out;
+      }
+      .team-member-card:hover {
+        transform: translateY(-5px);
+      }
+    </style>
+  </head>
+  <body>
+    <section class="w-full bg-[#006A4E] text-white py-3.5 px-4">
+      <div class="container mx-auto flex items-center relative">
+        <div
+          class="font-normal text-[20px] text-[#FEFEFE] leading-[100%] tracking-[0%] w-full lg:text-center"
+        >
+          শিক্ষা, ঐক্য, প্রগতি
+        </div>
+        <div class="flex space-x-4 md:space-x-8 absolute right-[0px] text-3xl">
+          <a
+            href="#"
+            class="text-[#F4F4F4] hover:text-gray-200 transition-colors"
+          >
+            <i class="fa-brands fa-square-facebook"></i>
+          </a>
+          <a
+            href="#"
+            class="text-[#F4F4F4] hover:text-gray-200 transition-colors"
+          >
+            <i class="fa-brands fa-square-instagram"></i>
+          </a>
+          <a
+            href="#"
+            class="text-[#F4F4F4] hover:text-gray-200 transition-colors"
+          >
+            <i class="fa-brands fa-square-twitter"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- header -->
+    <header
+      class="w-full text-black bg-[#F4F4F4] shadow-[4px_4px_16px_0px_#0000000A]"
+    >
+      <div
+        class="container mx-auto pe-4 sm:pe-0 md:py-[24px] py-4 flex items-center justify-between relative"
+      >
+        <!-- Mobile Menu Button -->
+        <button
+          id="mobile-menu-btn"
+          class="md:hidden focus:outline-none ml-auto text-2xl font-bold text-black"
+        >
+          &#9776;
+        </button>
+
+        <!-- Logo Centered -->
+        <div
+          class="flex-shrink-0 absolute top-0 md:top-2.5 sm:left-0 z-10 left-4 md:left-1/2 transform md:-translate-x-1/2 w-8 h-8 mt-[16px] md:mt-0 h-10 w-10 md:h-[124px] md:w-[124px]"
+        >
+          <img
+            src="../images/bnp-logo.svg"
+            alt="Logo"
+            class="w-full h-full object-cover"
+          />
+        </div>
+
+        <!-- Desktop Navs -->
+        <nav
+          class="hidden md:flex items-center justify-between text-[16px] font-normal w-[40%]"
+        >
+          <ul class="flex w-full justify-between items-center">
+            <li class="cursor-pointer hover:text-red-500">
+              <a href="/pages/committee.html">কমিটি তালিকা</a>
+            </li>
+            <li class="cursor-pointer hover:text-red-500">
+              <a href="/pages/karjokrom.html">কার্যক্রম</a>
+            </li>
+            <li class="cursor-pointer hover:text-red-500">
+              <a href="/pages/niyomaboli.html">নিয়মাবলী</a>
+            </li>
+            <li class="cursor-pointer hover:text-red-500">
+              <a href="/pages/notice.html">নোটিশ</a>
+            </li>
+          </ul>
+        </nav>
+
+        <nav
+          class="hidden md:flex items-center text-[16px] font-normal w-[40%]"
+        >
+          <ul class="flex w-full justify-between items-center">
+            <li class="cursor-pointer hover:text-red-500">
+              <a href="/pages/history.html">ইতিহাস</a>
+            </li>
+            <li class="cursor-pointer hover:text-red-500">
+              <a href="">ফটো গ্যালারি</a>
+            </li>
+            <li class="cursor-pointer hover:text-red-500">
+              <a href="">অভিযোগ</a>
+            </li>
+            <li class="cursor-pointer hover:text-red-500">
+              <a href="">সাবস্ক্রিপশন</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- Mobile Menu Dropdown -->
+      <div id="mobile-menu" class="md:hidden hidden pb-4 mt-3 ps-4.5 sm:ps-5">
+        <ul class="space-y-2 text-[16px] font-normal">
+          <li class="cursor-pointer hover:text-red-500">
+            <a href="/pages/committee.html">কমিটি তালিকা</a>
+          </li>
+          <li class="cursor-pointer hover:text-red-500">
+            <a href="/pages/karjokrom.html">কার্যক্রম</a>
+          </li>
+          <li class="cursor-pointer hover:text-red-500">
+            <a href="/pages/niyomaboli.html">নিয়মাবলী</a>
+          </li>
+          <li class="cursor-pointer hover:text-red-500">
+            <a href="/pages/notice.html">নোটিশ</a>
+          </li>
+          <li class="cursor-pointer hover:text-red-500">
+            <a href="/pages/history.html">ইতিহাস</a>
+          </li>
+          <li class="cursor-pointer hover:text-red-500">
+            <a href="">ফটো গ্যালারি</a>
+          </li>
+          <li class="cursor-pointer hover:text-red-500">
+            <a href="">অভিযোগ</a>
+          </li>
+          <li class="cursor-pointer hover:text-red-500">
+            <a href="">সাবস্ক্রিপশন</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- banner with national Martyr -->
+    <section
+      class="w-full h-[400px] md:h-[600px] 2xl:h-[800px] bg-cover bg-center relative"
+      style="background-image: url('../images/rules-banner-image.svg')"
+    >
+      <!-- Logo or Text Container -->
+      <div class="relative z-10 h-full w-full lg:max-w-4xl  mx-auto text-white">
+        <div
+          class="container mx-auto  md:px-0 flex flex-col items-center justify-center h-full"
+        >
+          <h2
+            class="font-semibold text-[48px] leading-16 tracking-[0] text-center"
+          >
+           সংগ্রাম, স্বাধীনতা ও অধিকার <br/> আমাদের অগ্রযাত্রার গৌরবময় কার্যক্রম
+          </h2>
+        </div>
+      </div>
+    </section>
+
+    <!-- নোটিশ বোর্ড -->
+    <section class="md:pt-20 pt-14 px-4 md:px-0 bg-[#F4F4F4]">
+      <div class="container mx-auto px-4">
+        <div
+          class="w-full md:max-w-5xl mx-auto space-y-4 md:space-y-6 px-4 lg:px-14"
+        >
+          <h2
+            class="font-semibold text-2xl text-[#006A4E] md:text-[36px] md:leading-12 lg:leading-[100%] tracking-[0%] font-liador text-center"
+          >
+            সংগঠনের পরিচালনা ও আচরণবিধি
+          </h2>
+          <p
+            class="text-[#5D5D5D] font-normal text-sm md:text-base font-liador"
+          >
+            সংগঠনের সফল পরিচালনা ও সুষ্ঠু কার্যক্রম বজায় রাখতে কিছু
+            গুরুত্বপূর্ণ নিয়ম ও নীতিমালা অনুসরণ করা আবশ্যক। আমাদের আদর্শ, একতা
+            এবং শৃঙ্খলা বজায় রাখার জন্য এই নিয়মাবলী প্রণয়ন করা হয়েছে।
+            প্রতিটি সদস্য, নেতা, এবং ইউনিট কমিটি এই নির্দেশনাগুলো মেনে চলবে —
+            যেন সংগঠনের গৌরবময় ইতিহাসের ধারাবাহিকতা বজায় থাকে এবং ভবিষ্যতের
+            পথচলা হয় আরও সুসংগঠিত ও শক্তিশালী।
+          </p>
+        </div>
+        
+        <div class=" mt-8 md:mt-12 lg:mt-14 px-4 md:px-0 p-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <!-- 1 -->
+                <div class="bg-[#FEFEFE] rounded-xl shadow-[4px_4px_16px_0px_#0000000A] pt-4.5 pb-8 px-4.5 text-center max-w-md mx-auto">
+                    <div class="w-14 h-14 mx-auto mb-4 flex items-center justify-center rounded-full border-[6px] border-[#F4F4F4] bg-[#F4F4F4]">
+                        <span class="text-[#E52427] text-[28px] font-bold leading-[100%]">১</span>
+                    </div>
+
+                    <h3 class="text-[#006A4E] mb-3 text-center font-liador font-semibold text-xl leading-[100%] tracking-[0%]">
+                        সদস্যপদ গ্রহণের নিয়ম
+                    </h3>
+
+                    <p class="font-liador font-normal text-sm md:text-base leading-[200%] tracking-[0%] text-[#5D5D5D] ">
+                        যে কেউ, যিনি জাতীয়তাবাদী চেতনায় প্রতি আস্থাশীল এবং সংগঠনের নীতিগুলোকে সম্মান করেন, তিনি সদস্যপদ গ্রহণের জন্য আবেদন করতে পারবেন। আবেদন অনুমোদনের পর সদস্যপদ নিশ্চিত করা হবে
+                    </p>
+                </div>
+                <!-- 2 -->
+                <div class="bg-[#FEFEFE] rounded-xl shadow-[4px_4px_16px_0px_#0000000A] pt-4.5 pb-8 px-4.5 text-center max-w-md mx-auto">
+                    <div class="w-14 h-14 mx-auto mb-4 flex items-center justify-center rounded-full border-[6px] border-[#F4F4F4] bg-[#F4F4F4]">
+                        <span class="text-[#E52427] text-[28px] font-bold leading-[100%]">২</span>
+                    </div>
+
+                    <h3 class="text-[#006A4E] mb-3 text-center font-liador font-semibold text-xl leading-[100%] tracking-[0%]">
+                        সদস্যদের দায়িত্ব
+                    </h3>
+
+                    <p class="font-liador font-normal text-sm md:text-base leading-[200%] tracking-[0%] text-[#5D5D5D] ">
+                       প্রত্যেক সদস্যকে সংগঠনের কর্মসূচিতে সক্রিয়ভাবে
+                        অংশগ্রহণ করতে হবে, দলের নীতি মেনে চলতে হবে
+                        এবং সংগঠনের ঐক্য ও শৃঙ্খলা বজায় রাখতে হবে।
+                    </p>
+                </div>
+                <!--  -->
+                <div class="bg-[#FEFEFE] rounded-xl shadow-[4px_4px_16px_0px_#0000000A] pt-4.5 pb-8 px-4.5 text-center max-w-md mx-auto">
+                    <div class="w-14 h-14 mx-auto mb-4 flex items-center justify-center rounded-full border-[6px] border-[#F4F4F4] bg-[#F4F4F4]">
+                        <span class="text-[#E52427] text-[28px] font-bold leading-[100%]">৩ </span>
+                    </div>
+
+                    <h3 class="text-[#006A4E] mb-3 text-center font-liador font-semibold text-xl leading-[100%] tracking-[0%]">
+                       সদস্যপদ বাতিলের শর্ত
+                    </h3>
+
+                    <p class="font-liador font-normal text-sm md:text-base leading-[200%] tracking-[0%] text-[#5D5D5D] ">
+                        যদি কোনো সদস্য সংগঠনের নীতিমালা লঙ্ঘন করেন, অসদাচরণে লিপ্ত হন বা সংগঠনের ভাবমূর্তি ক্ষতিগ্রস্ত করেন, তবে তার সদস্যপদ বাতিল করা হবে।
+                    </p>
+                </div>
+                <!--  -->
+                <!--  -->
+                <div class="bg-[#FEFEFE] rounded-xl shadow-[4px_4px_16px_0px_#0000000A] pt-4.5 pb-8 px-4.5 text-center max-w-md mx-auto">
+                    <div class="w-14 h-14 mx-auto mb-4 flex items-center justify-center rounded-full border-[6px] border-[#F4F4F4] bg-[#F4F4F4]">
+                        <span class="text-[#E52427] text-[28px] font-bold leading-[100%]"> ৪ </span>
+                    </div>
+
+                    <h3 class="text-[#006A4E] mb-3 text-center font-liador font-semibold text-xl leading-[100%] tracking-[0%]">
+                        সদস্যপদ গ্রহণের নিয়ম
+                    </h3>
+
+                    <p class="font-liador font-normal text-sm md:text-base leading-[200%] tracking-[0%] text-[#5D5D5D] ">
+                        যে কেউ, যিনি জাতীয়তাবাদী চেতনার প্রতি আস্থাশীল
+                        এবং সংগঠনের নীতিগুলোকে সম্মান করেন, তিনি
+                        সদস্যপদ গ্রহণের জন্য আবেদন করতে পারবেন| 
+                        আবেদন অনুমোদনের পর সদস্যপদ নিশ্চিত করা হবে।
+                    </p>
+                </div>
+                <!--  -->
+                <div class="bg-[#FEFEFE] rounded-xl shadow-[4px_4px_16px_0px_#0000000A] pt-4.5 pb-8 px-4.5 text-center max-w-md mx-auto">
+                    <div class="w-14 h-14 mx-auto mb-4 flex items-center justify-center rounded-full border-[6px] border-[#F4F4F4] bg-[#F4F4F4]">
+                        <span class="text-[#E52427] text-[28px] font-bold leading-[100%]">৫ </span>
+                    </div>
+
+                    <h3 class="text-[#006A4E] mb-3 text-center font-liador font-semibold text-xl leading-[100%] tracking-[0%]">
+                        সদস্যদের দায়িত্ব
+                    </h3>
+
+                    <p class="font-liador font-normal text-sm md:text-base leading-[200%] tracking-[0%] text-[#5D5D5D] ">
+                        প্রত্যেক সদস্যকে সংগঠনের কর্মসূচিতে সক্রিয়ভাবে
+                        অংশগ্রহণ করতে হবে, দলের নীতি মেনে চলতে হবে
+                        এবং সংগঠনের ঐক্য ও শৃঙ্খলা বজায় রাখতে হবে।
+                    </p>
+                </div>
+                <!--  -->
+                <div class="bg-[#FEFEFE] rounded-xl shadow-[4px_4px_16px_0px_#0000000A] pt-4.5 pb-8 px-4.5 text-center max-w-md mx-auto">
+                    <div class="w-14 h-14 mx-auto mb-4 flex items-center justify-center rounded-full border-[6px] border-[#F4F4F4] bg-[#F4F4F4]">
+                        <span class="text-[#E52427] text-[28px] font-bold leading-[100%]">৬</span>
+                    </div>
+
+                    <h3 class="text-[#006A4E] mb-3 text-center font-liador font-semibold text-xl leading-[100%] tracking-[0%]">
+                        সদস্যপদ বাতিলের শর্ত
+                    </h3>
+
+                    <p class="font-liador font-normal text-sm md:text-base leading-[200%] tracking-[0%] text-[#5D5D5D] ">
+                        যদি কোনো সদস্য সংগঠনের নীতিমালা লঙ্ঘন করেন,
+                        অসদাচরণে লিপ্ত হন বা সংগঠনের ভাবমূর্তি ক্ষতিগ্রস্ত
+                        করেন, তবে তার সদস্যপদ বাতিল করা হবে।
+                    </p>
+                </div>
+                <!--  -->
+            </div>
+        </div>
+
+        <!-- button -->
+          <div class="w-80 pt-8 md:pt-10 lg:pt-14 pt-6 mx-auto">
+              <a
+                href="http://"
+                class="font-liador font-normal text-base md:text-[18px] leading-2 text-[#FEFEFE] px-10 py-4 bg-[#F20D28] rounded-lg hover:bg-[#F42A50] hover:text-white transition-colors duration-300 text-center hidden sm:block"
+              >
+                পিডিএফ ডাউনলোড করুন</a
+              >
+            </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Upcoming Events -->
+
+   
+
+    <!-- footer -->
+    <footer class="bg-[#111816] mt-20">
+      <div
+        class="container mx-auto pt-[50px] md:pt-[72px] pb-20 md:pb-[111px] px-4 md:px-0 flex flex-col md:flex-row justify-between"
+      >
+        <!-- left content -->
+        <div class="w-[350px] h-auto flex flex-col items-start">
+          <div class="">
+            <img src="../images/bnp-logo.svg" alt="logo" class="w-28 h-28" />
+            <div class="mt-6 md:mt-[30px]">
+              <h4
+                class="text-[#FEFEFE] text-base md:text-[18px] font-liador font-medium"
+              >
+                বাংলাদেশ জাতীয়তাবাদী ছাত্রদল (জেসিডি)
+              </h4>
+              <p
+                class="text-[#FEFEFE] font-normal text-sm md:text-base py-6 - text-base font-normal leading-6 md:leading-10 tracking-normal flex"
+              >
+                গণতন্ত্র, স্বাধীনতা ও শিক্ষার্থীদের অধিকার রক্ষায় আমরা দৃঢ়
+                প্রতিশ্রুতিবদ্ধ, ভবিষ্যৎ প্রজন্মের জন্য ন্যায় ও সমতার ভিত্তি
+                গড়ে তুলছি।
+              </p>
+              <div class="border border-[#0B3B2F] w-[85%]"></div>
+            </div>
+          </div>
+
+          <!-- socials -->
+
+          <div
+            class="flex items-center gap-4 md:gap-6 lg:gap-8 mt-4 md:mt-5 lg:mt-7"
+          >
+            <!-- fb -->
+            <span class="w-8 h-8">
+              <img src="../images/icons/fb-red.svg" alt="" />
+            </span>
+            <!-- insta -->
+            <span class="w-8 h-8">
+              <img src="../images/icons/insta-red.svg" alt="" />
+            </span>
+            <!-- x -->
+            <span class="w-8 h-8">
+              <img src="../images/icons/red-x.svg" alt="" />
+            </span>
+          </div>
+        </div>
+
+        <!-- center content -->
+        <div class="w-64 h-auto flex flex-col items-start hidden md:block">
+          <nav class="text-[#F9FAFB] rounded md:ps-10 lg:ps-10 xl:ps-0">
+            <ul class="space-y-4 font-normal font-liador text-sm md:text-base">
+              <li
+                class="cursor-pointer transition duration-200 hover:underline"
+              >
+                হোম
+              </li>
+              <li
+                class="cursor-pointer transition duration-200 hover:underline"
+              >
+                কমিটি তালিকা
+              </li>
+              <li
+                class="cursor-pointer transition duration-200 hover:underline"
+              >
+                কার্যক্রম
+              </li>
+              <li
+                class="cursor-pointer transition duration-200 hover:underline"
+              >
+                ফটো গ্যালারি
+              </li>
+              <li
+                class="cursor-pointer transition duration-200 hover:underline"
+              >
+                সংবিধি
+              </li>
+              <li
+                class="cursor-pointer transition duration-200 hover:underline"
+              >
+                অভিযোগ
+              </li>
+              <li
+                class="cursor-pointer transition duration-200 hover:underline"
+              >
+                নোটিশ
+              </li>
+              <li
+                class="cursor-pointer transition duration-200 hover:underline"
+              >
+                সাবস্ক্রিপশন
+              </li>
+              <li
+                class="cursor-pointer transition duration-200 hover:underline"
+              >
+                ইতিহাস
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="flex justify-between mt-8 md:mt-0">
+          <!-- md:hidden -->
+          <div class="w-64 h-auto flex flex-col items-start md:hidden">
+            <nav class="text-[#F9FAFB] rounded">
+              <ul
+                class="space-y-4 font-normal font-liador text-sm md:text-base"
+              >
+                <li
+                  class="cursor-pointer transition duration-200 hover:underline"
+                >
+                  হোম
+                </li>
+                <li
+                  class="cursor-pointer transition duration-200 hover:underline"
+                >
+                  কমিটি তালিকা
+                </li>
+                <li
+                  class="cursor-pointer transition duration-200 hover:underline"
+                >
+                  কার্যক্রম
+                </li>
+                <li
+                  class="cursor-pointer transition duration-200 hover:underline"
+                >
+                  ফটো গ্যালারি
+                </li>
+                <li
+                  class="cursor-pointer transition duration-200 hover:underline"
+                >
+                  সংবিধি
+                </li>
+                <li
+                  class="cursor-pointer transition duration-200 hover:underline"
+                >
+                  অভিযোগ
+                </li>
+                <li
+                  class="cursor-pointer transition duration-200 hover:underline"
+                >
+                  নোটিশ
+                </li>
+                <li
+                  class="cursor-pointer transition duration-200 hover:underline"
+                >
+                  সাবস্ক্রিপশন
+                </li>
+                <li
+                  class="cursor-pointer transition duration-200 hover:underline"
+                >
+                  ইতিহাস
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <!-- right content -->
+          <div class="w-[300px]">
+            <div class="text-[#FEFEFE] flex flex-col items-start space-y-3">
+              <div class="flex md:gap-5 gap-4">
+                <span>
+                  <img
+                    src="../images/icons/red-location.svg"
+                    class="w-10"
+                    alt=""
+                  />
+                </span>
+                <p>বাড়ি নং XXX, সড়ক নং XXX, এলাকা, শহর - XXXX, বাংলাদেশ</p>
+              </div>
+              <!--  -->
+              <div class="flex md:gap-5 gap-4">
+                <span>
+                  <img
+                    src="../images/icons/red-phone-icon.svg"
+                    class="w-6"
+                    alt=""
+                  />
+                </span>
+                <p>+৮৮ ০১৭XXXXXXXX</p>
+              </div>
+              <!--  -->
+              <div class="flex md:gap-5 gap-4">
+                <span>
+                  <img src="../images/icons/red-mail.svg" class="w-6" alt="" />
+                </span>
+                <p>info@example.com</p>
+              </div>
+            </div>
+
+            <button
+              class="py-4.5 px-[34px] bg-[#F42A40] rounded-[30px] font-liador md:text-[16px] text-sm text-[#FEFEFE] mt-8 md:mt-12"
+            >
+              সরাসরি যোগাযোগ করুন
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- for sm -->
+
+      <!-- bottom -->
+      <div
+        class="flex items-center justify-center border border-[#0B3B2F] pt-8 pb-6"
+      >
+        <p
+          class="font-liador font-normal text-sm md:text-base tracking-wide text-[#FEFEFE]"
+        >
+          2025 বাংলাদেশ জাতীয়তাবাদী ছাত্রদল (জেসিডি)। সর্বস্বত্ব সংরক্ষিত।
+        </p>
+      </div>
+    </footer>
+
+    <!-- JS for Mobile Menu Toggle -->
+    <script>
+      const btn = document.getElementById("mobile-menu-btn");
+      const menu = document.getElementById("mobile-menu");
+      let isOpen = false;
+
+      btn.addEventListener("click", () => {
+        isOpen = !isOpen;
+        menu.classList.toggle("hidden");
+
+        // Change button text based on toggle
+        btn.innerHTML = isOpen ? "&#10005;" : "&#9776;";
+      });
+    </script>
+    <!-- কেন্দ্রীয় কমিটি -->
+  </body>
+  <script
+    src="https://kit.fontawesome.com/ab933b7f51.js"
+    crossorigin="anonymous"
+  ></script>
+</html>

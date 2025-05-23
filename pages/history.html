@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/globals.css" />
+
+    <!--  -->
+    <style>
+      /* Optional custom styles */
+      .team-member-card {
+        transition: transform 0.2s ease-in-out;
+      }
+      .team-member-card:hover {
+        transform: translateY(-5px);
+      }
+    </style>
+  </head>
+  <body>
+    <section class="w-full bg-[#006A4E] text-white py-3.5 px-4">
+      <div class="container mx-auto flex items-center relative">
+        <div
+          class="font-normal text-[20px] text-[#FEFEFE] leading-[100%] tracking-[0%] w-full lg:text-center"
+        >
+          শিক্ষা, ঐক্য, প্রগতি
+        </div>
+        <div class="flex space-x-4 md:space-x-8 absolute right-[0px] text-3xl">
+          <a
+            href="#"
+            class="text-[#F4F4F4] hover:text-gray-200 transition-colors"
+          >
+            <i class="fa-brands fa-square-facebook"></i>
+          </a>
+          <a
+            href="#"
+            class="text-[#F4F4F4] hover:text-gray-200 transition-colors"
+          >
+            <i class="fa-brands fa-square-instagram"></i>
+          </a>
+          <a
+            href="#"
+            class="text-[#F4F4F4] hover:text-gray-200 transition-colors"
+          >
+            <i class="fa-brands fa-square-twitter"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- header -->
+    <header
+      class="w-full text-black bg-[#F4F4F4] shadow-[4px_4px_16px_0px_#0000000A]"
+    >
+      <div
+        class="container mx-auto pe-4 sm:pe-0 md:py-[24px] py-4 flex items-center justify-between relative"
+      >
+        <!-- Mobile Menu Button -->
+        <button
+          id="mobile-menu-btn"
+          class="md:hidden focus:outline-none ml-auto text-2xl font-bold text-black"
+        >
+          &#9776;
+        </button>
+
+        <!-- Logo Centered -->
+        <div
+          class="flex-shrink-0 absolute top-0 md:top-2.5 sm:left-0 z-10 left-4 md:left-1/2 transform md:-translate-x-1/2 w-8 h-8 mt-[16px] md:mt-0 h-10 w-10 md:h-[124px] md:w-[124px]"
+        >
+          <img
+            src="../images/bnp-logo.svg"
+            alt="Logo"
+            class="w-full h-full object-cover"
+          />
+        </div>
+
+        <!-- Desktop Navs -->
+        <nav
+          class="hidden md:flex items-center justify-between text-[16px] font-normal w-[40%]"
+        >
+          <ul class="flex w-full justify-between items-center">
+            <li class="cursor-pointer hover:text-red-500">
+              <a href="/pages/committee.html">কমিটি তালিকা</a>
+            </li>
+            <li class="cursor-pointer hover:text-red-500">
+              <a href="/pages/karjokrom.html">কার্যক্রম</a>
+            </li>
+            <li class="cursor-pointer hover:text-red-500">
+              <a href="/pages/niyomaboli.html">নিয়মাবলী</a>
+            </li>
+            <li class="cursor-pointer hover:text-red-500">
+              <a href="/pages/notice.html">নোটিশ</a>
+            </li>
+          </ul>
+        </nav>
+
+        <nav
+          class="hidden md:flex items-center text-[16px] font-normal w-[40%]"
+        >
+          <ul class="flex w-full justify-between items-center">
+            <li class="cursor-pointer hover:text-red-500">
+              <a href="/pages/history.html">ইতিহাস</a>
+            </li>
+            <li class="cursor-pointer hover:text-red-500">
+              <a href="">ফটো গ্যালারি</a>
+            </li>
+            <li class="cursor-pointer hover:text-red-500">
+              <a href="">অভিযোগ</a>
+            </li>
+            <li class="cursor-pointer hover:text-red-500">
+              <a href="">সাবস্ক্রিপশন</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- Mobile Menu Dropdown -->
+      <div id="mobile-menu" class="md:hidden hidden pb-4 mt-3 ps-4.5 sm:ps-5">
+        <ul class="space-y-2 text-[16px] font-normal">
+          <li class="cursor-pointer hover:text-red-500">
+            <a href="/pages/committee.html">কমিটি তালিকা</a>
+          </li>
+          <li class="cursor-pointer hover:text-red-500">
+            <a href="/pages/karjokrom.html">কার্যক্রম</a>
+          </li>
+          <li class="cursor-pointer hover:text-red-500">
+            <a href="/pages/niyomaboli.html">নিয়মাবলী</a>
+          </li>
+          <li class="cursor-pointer hover:text-red-500">
+            <a href="/pages/notice.html">নোটিশ</a>
+          </li>
+          <li class="cursor-pointer hover:text-red-500">
+            <a href="/pages/history.html">ইতিহাস</a>
+          </li>
+          <li class="cursor-pointer hover:text-red-500">
+            <a href="">ফটো গ্যালারি</a>
+          </li>
+          <li class="cursor-pointer hover:text-red-500">
+            <a href="">অভিযোগ</a>
+          </li>
+          <li class="cursor-pointer hover:text-red-500">
+            <a href="">সাবস্ক্রিপশন</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- banner with national Martyr -->
+    <section
+      class="w-full h-[400px] md:h-[600px] 2xl:h-[800px] bg-cover bg-center relative"
+      style="background-image: url('../images/history-banner-image.svg')"
+    >
+      <!-- Logo or Text Container -->
+      <div class="relative z-10 h-full w-full text-white">
+        <div
+          class="container mx-auto px-4 md:px-0 flex flex-col items-center justify-center h-full"
+        >
+          <h2
+            class="font-semibold text-[48px] leading-[100%] tracking-[0] text-center"
+          >
+            সংগঠনের গৌরবময় ইতিহাস
+          </h2>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="bg-[#F4F4F4] pt-8 md:pt-10 lg:pt-14 pb-12 md:pb-16 lg:pb-20 px-4 md:px-0"
+    >
+      <div class="container mx-auto w-full md:max-w-4xl">
+        <p
+          class="leading-[30px] font-normal md:text-base text-md tracking-[0%] text-[#5D5D5D] font-liador text-center"
+        >
+          আমাদের সংগঠন জাতীয়তাবাদী চেতনার মশাল নিয়ে গণতন্ত্র, স্বাধীনতা, এবং
+          শিক্ষার্থীদের অধিকার প্রতিষ্ঠার লক্ষ্যে গঠিত হয়। জন্মলগ্ন থেকেই এই
+          সংগঠন ছাত্রসমাজের কণ্ঠস্বর হিসেবে নিরলসভাবে কাজ করে যাচ্ছে।
+        </p>
+      </div>
+    </section>
+
+    <!-- prothistar suchonaa -->
+    <section
+      class="w-full pt-4 md:pt-20 md:pb-20 px-4 md:px-0 bg-cover bg-center relative bg-[#FEFEFE]"
+    >
+      <div class="container mx-auto">
+        <div class="md:flex justify-start items-center gap-14 xl:gap-16">
+          <img
+            src="/../images/zia-ur-rahman-image.svg"
+            class="md:w-[40%] lg:max-w-full lg:w-[422px] lg:h-[416px]"
+          />
+
+          <div class="w-full md:w-[540px] lg:w-[700px] pt-8 md:pt-0">
+            <h2
+              class="font-semibold text-2xl md:text-[36px] text-[#006A4E] md:leading-12 lg:leading-[100%] tracking-[0%] font-liador"
+            >
+              প্রতিষ্ঠার সূচনা
+            </h2>
+
+            <p
+              class="leading-[30px] font-normal md:text-base text-md tracking-tight text-[#5D5D5D] font-liador pt-6"
+            >
+              ১৯৭৯ সালে জাতীয়তাবাদী চেতনা, স্বাধীনতার আদর্শ, এবং গণতন্ত্র
+              প্রতিষ্ঠার অঙ্গীকার নিয়ে আমাদের সংগঠনের পথচলা শুরু। সেই সময়ে
+              শিক্ষার্থীদের অধিকার রক্ষার জন্য একটি শক্তিশালী কণ্ঠস্বরের
+              প্রয়োজন ছিল — আর সেই শূন্যস্থান পূরণ করতেই এই সংগঠনের জন্ম।
+            </p>
+            <p
+              class="leading-[30px] font-normal md:text-base text-md tracking-tight text-[#5D5D5D] font-liador pt-2"
+            >
+              প্রতিষ্ঠার পর থেকেই আমরা শুধু একটি ছাত্র সংগঠন হিসেবে নয়, বরং
+              একটি আদর্শ, একটি আন্দোলন, এবং একটি পরিবারের মতো কাজ করে এসেছি।
+              দেশপ্রেমে উজ্জীবিত হয়ে আমাদের নেতা-কর্মীরা অত্যাচার-অবিচারের
+              বিরুদ্ধে রুখে দাঁড়িয়েছে, গণতন্ত্র পুনরুদ্ধারের সংগ্রামে অগ্রণী
+              ভূমিকা পালন করেছে।
+            </p>
+            <p
+              class="leading-[30px] font-normal md:text-base text-md tracking-tight text-[#5D5D5D] font-liador pt-2"
+            >
+              প্রতিটি বাঁধা, প্রতিটি সংগ্রাম আমাদের আরও শক্তিশালী করেছে। আজও
+              আমরা সেই একই চেতনায় উজ্জীবিত হয়ে নতুন প্রজন্মের নেতৃত্ব তৈরিতে
+              কাজ করে যাচ্ছি। আমাদের প্রতিষ্ঠার ইতিহাস শুধু একটি তারিখ নয় — এটি
+              একটি গৌরবময় অধ্যায়, যা আমাদের পথচলাকে বারবার নতুন শক্তি আর
+              অনুপ্রেরণা দেয়।
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- july biplob -->
+    <section
+      class="w-full pt-4 md:py-20 md:pb-20 px-4 md:px-0 bg-cover bg-center relative bg-[#F4F4F4]"
+    >
+      <div class="container mx-auto">
+        <div class="md:flex justify-start items-center gap-24 xl:gap-16">
+          <div class="w-full md:w-[540px] lg:w-[700px] pt-8 md:pt-0">
+            <h2
+              class="font-semibold text-2xl md:text-[36px] text-[#006A4E] md:leading-12 lg:leading-[100%] tracking-[0%] font-liador"
+            >
+              জুলাই বিপ্লব: এক গৌরবময় অধ্যায়
+            </h2>
+
+            <p
+              class="leading-[30px] font-normal md:text-base text-md tracking-tight text-[#5D5D5D] font-liador pt-6"
+            >
+              সংগঠনের অন্যতম গৌরবময় অধ্যায় হলো জুলাই বিপ্লব। এটি ছিল
+              ছাত্রসমাজের এক ঐতিহাসিক প্রতিরোধ যেখানে সংগঠনের সাহসী নেতা-কর্মীরা
+              নির্ভীক নেতৃত্ব দিয়ে গণতন্ত্র পুনরুদ্ধারের সংগ্রামকে সামনে নিয়ে
+              যান। এই বিপ্লবের মাধ্যমে ছাত্রসমাজের শক্তি ও আত্মত্যাগ প্রমাণিত
+              হয়েছে|
+            </p>
+          </div>
+
+          <img
+            src="/../images/july-biplob-image.svg"
+            class="md:w-[40%] lg:max-w-full lg:w-[422px] lg:h-[416px]"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- golden chapter -->
+    <section
+      class="w-full pt-4 md:py-20 md:pb-20 px-4 md:px-0 bg-cover bg-center relative bg-[#FEFEFE]"
+    >
+      <div class="container mx-auto">
+        <div class="md:flex justify-start items-center gap-14 xl:gap-16">
+          <img
+            src="/../images/golden-chapter-image.svg"
+            class="md:w-[40%] lg:max-w-full lg:w-[422px] lg:h-[416px]"
+          />
+
+          <div class="w-full md:w-[540px] lg:w-[680px] pt-8 md:pt-0">
+            <h2
+              class="font-semibold text-2xl md:text-[36px] text-[#006A4E] md:leading-12 lg:leading-[100%] tracking-[0%] font-liador"
+            >
+              অর্জনের সোনালী অধ্যায়
+            </h2>
+            <div
+              class="space-y-4 font-normal text-[18px] leading-[100%] tracking-[0] mt-2 md:mt-4 text-[#383838]"
+            >
+              <div class="flex items-start space-x-3">
+                <svg
+                  class="flex-shrink-0 mt-[6px]"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22Z"
+                    stroke="#006A4E"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22Z"
+                    stroke="black"
+                    stroke-opacity="0.2"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M7.75 12L10.58 14.83L16.25 9.17004"
+                    stroke="#006A4E"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M7.75 12L10.58 14.83L16.25 9.17004"
+                    stroke="black"
+                    stroke-opacity="0.2"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+
+                <p
+                  class="leading-[30px] font-normal md:text-base text-md tracking-tight text-[#5D5D5D] font-liador"
+                >
+                  <span class="font-semibold">
+                    ঢাকা-পশ্চিম ইউনিটের অবদান (১৯৮৫-বর্তমান):</span
+                  >
+                  ১৯৮৫ সাল থেকে শুরু করে এখন পর্যন্ত ঢাকা- পশ্চিম ইউনিটের
+                  নেতা-কর্মীরা সংগঠনের আদর্শ রক্ষায় সক্রিয়ভাবে কাজ করে চলেছেন।
+                  বিশেষ করে ২০০৭ সালের সংকটময় সময়ে তাদের সাহসী ভূমিকা আজও
+                  গর্বের সঙ্গে স্মরণ করা হয়।
+                </p>
+              </div>
+
+              <div class="flex items-start space-x-3">
+                <svg
+                  class="flex-shrink-0 mt-[6px]"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22Z"
+                    stroke="#006A4E"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22Z"
+                    stroke="black"
+                    stroke-opacity="0.2"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M7.75 12L10.58 14.83L16.25 9.17004"
+                    stroke="#006A4E"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M7.75 12L10.58 14.83L16.25 9.17004"
+                    stroke="black"
+                    stroke-opacity="0.2"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+
+                <p
+                  class="leading-[30px] font-normal md:text-base text-md tracking-tight text-[#5D5D5D] font-liador"
+                >
+                  <span class="font-semibold"
+                    >জাতীয় স্বীকৃতি (১৯৯১, ২০০১):</span
+                  >
+                  ১৯৯১ সালের গণতান্ত্রিক বিজয় এবং ২০০১ সালের গুরুত্বপূর্ণ
+                  রাজনৈতিক পরিবর্তনে আমাদের সংগঠনের নেতা-কর্মীরা অগ্রণী ভূমিকা
+                  রেখেছেন, অনেকে জাতীয় নেতৃত্বের অংশ হয়ে দেশের সেবায় কাজ
+                  করছেন।
+                </p>
+              </div>
+
+              <div class="flex items-start space-x-3">
+                <svg
+                  class="flex-shrink-0 mt-[6px]"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22Z"
+                    stroke="#006A4E"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22Z"
+                    stroke="black"
+                    stroke-opacity="0.2"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M7.75 12L10.58 14.83L16.25 9.17004"
+                    stroke="#006A4E"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M7.75 12L10.58 14.83L16.25 9.17004"
+                    stroke="black"
+                    stroke-opacity="0.2"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+
+                <p
+                  class="leading-[30px] font-normal md:text-base text-md tracking-tight text-[#5D5D5D] font-liador"
+                >
+                  <span class="font-semibold">
+                    শহীদদের আত্মত্যাগ (১৯৮২, ১৯৯০):</span
+                  >
+                  আমাদের সংগঠনের অকুতোভয় সদস্যরা ১৯৮২ সালের ছাত্র আন্দোলন ও
+                  ১৯৯০ সালের স্বৈরাচারবিরোধী লড়াইয়ে জীবন উৎসর্গ করেছেন, যা আজও
+                  আমাদের প্রেরণার উৎস।
+                </p>
+              </div>
+            </div>
+
+            <!-- <div
+              class="space-y-2 font-normal text-[18px] leading-[100%] tracking-[0] mt-2 md:mt-4 text-[#383838]"
+            >
+              <div class="flex items-start space-x-2">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22Z"
+                    stroke="#006A4E"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22Z"
+                    stroke="black"
+                    stroke-opacity="0.2"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M7.75 12L10.58 14.83L16.25 9.17004"
+                    stroke="#006A4E"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M7.75 12L10.58 14.83L16.25 9.17004"
+                    stroke="black"
+                    stroke-opacity="0.2"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+
+                <p
+                  class="leading-[30px] font-normal md:text-base text-md tracking-tight text-[#5D5D5D] font-liador pt-2"
+                >
+                  ঢাকা-পশ্চিম ইউনিটের অবদান (১৯৮৫-বর্তমান): ১৯৮৫ সাল থেকে শুরু
+                  করে এখন পর্যন্ত ঢাকা- পশ্চিম ইউনিটের নেতা-কর্মীরা সংগঠনের
+                  আদর্শ রক্ষায় সক্রিয়ভাবে কাজ করে চলেছেন। বিশেষ করে ২০০৭ সালের
+                  সংকটময় সময়ে তাদের সাহসী ভূমিকা আজও গর্বের সঙ্গে স্মরণ করা
+                  হয়।
+                </p>
+              </div>
+              <div class="flex items-start space-x-2">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22Z"
+                    stroke="#006A4E"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22Z"
+                    stroke="black"
+                    stroke-opacity="0.2"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M7.75 12L10.58 14.83L16.25 9.17004"
+                    stroke="#006A4E"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M7.75 12L10.58 14.83L16.25 9.17004"
+                    stroke="black"
+                    stroke-opacity="0.2"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+
+                <p
+                  class="leading-[30px] font-normal md:text-base text-md tracking-tight text-[#5D5D5D] font-liador pt-2"
+                >
+                  জাতীয় স্বীকৃতি (১৯৯১, ২০০১): ১৯৯১ সালের গণতান্ত্রিক বিজয় এবং
+                  ২০০১ সালের গুরুত্বপূর্ণ রাজনৈতিক পরিবর্তনে আমাদের সংগঠনের
+                  নেতা-কর্মীরা অগ্রণী ভূমিকা রেখেছেন, অনেকে জাতীয় নেতৃত্বের অংশ
+                  হয়ে দেশের সেবায় কাজ করছেন।
+                </p>
+              </div>
+              <div class="flex items-start space-x-2">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22Z"
+                    stroke="#006A4E"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22Z"
+                    stroke="black"
+                    stroke-opacity="0.2"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M7.75 12L10.58 14.83L16.25 9.17004"
+                    stroke="#006A4E"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M7.75 12L10.58 14.83L16.25 9.17004"
+                    stroke="black"
+                    stroke-opacity="0.2"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <p
+                  class="leading-[30px] font-normal md:text-base text-md tracking-tight text-[#5D5D5D] font-liador pt-6"
+                >
+                  শহীদদের আত্মত্যাগ (১৯৮২, ১৯৯০): আমাদের সংগঠনের অকুতোভয়
+                  সদস্যরা ১৯৮২ সালের ছাত্র আন্দোলন ও ১৯৯০ সালের স্বৈরাচারবিরোধী
+                  লড়াইয়ে জীবন উৎসর্গ করেছেন, যা আজও আমাদের প্রেরণার উৎস।
+                </p>
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- join our  community -->
+    <section class="md:py-20 py-14 px-4 md:px-0 bg-[#F4F4F4]">
+      <div
+        class="container bg-[url(/images/join-to-community.svg)] bg-no-repeat bg-cover bg-center w-full h-[500px] mx-auto rounded-[16px]"
+      >
+        <div
+          class="flex flex-col items-center justify-center h-full bg-opacity-50 rounded-[16px] w-full md:max-w-4xl lg:max-w-5xl mx-auto text-center"
+        >
+          <h2
+            class="font-semibold text-2xl text-[#FEFEFE] md:text-[36px] md:leading-12 lg:leading-[100%] tracking-[0%] font-liador text-center"
+          >
+            চলুন, ইতিহাস থেকে অনুপ্রাণিত হয়ে নতুন ভবিষ্যৎ গড়ে তুলি!
+          </h2>
+          <p
+            class="leading-[30px] font-normal md:text-base text-md tracking-[0%] text-[#FEFEFE] font-liador sm:px-9 mt-4 md:mt-6 2xl:mt-8"
+          >
+            আমাদের সংগ্রাম, আত্মত্যাগ, এবং গৌরবময় অর্জনগুলোই ভবিষ্যতের পথে
+            এগিয়ে যাওয়ার শক্তি। আসুন, সেই আদর্শ ও চেতনায় উজ্জীবিত হয়ে সামনে
+            এগিয়ে যাই — এবার আপনার অংশগ্রহণে সংগঠন হবে আরও শক্তিশালী!
+          </p>
+
+          <div class="mt-8 md:mt-10 lg:mt-14 flex justify-center">
+            <a
+              href="#"
+              class="font-liador font-normal text-base md:text-[18px] text-base leading-2 text-[#FEFEFE] px-10 py-4 bg-[#F20D28] rounded-lg hover:bg-[#F42A50] hover:text-white transition-colors duration-300 text-center"
+              >সংগঠনে যোগ দিন</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="bg-[#111816]">
+      <div
+        class="container mx-auto pt-[50px] md:pt-[72px] pb-20 md:pb-[111px] px-4 md:px-0 flex flex-col md:flex-row justify-between"
+      >
+        <!-- left content -->
+        <div class="w-[350px] h-auto flex flex-col items-start">
+          <div class="">
+            <img src="../images/bnp-logo.svg" alt="logo" class="w-28 h-28" />
+            <div class="mt-6 md:mt-[30px]">
+              <h4
+                class="text-[#FEFEFE] text-base md:text-[18px] font-liador font-medium"
+              >
+                বাংলাদেশ জাতীয়তাবাদী ছাত্রদল (জেসিডি)
+              </h4>
+              <p
+                class="text-[#FEFEFE] font-normal text-sm md:text-base py-6 - text-base font-normal leading-6 md:leading-10 tracking-normal flex"
+              >
+                গণতন্ত্র, স্বাধীনতা ও শিক্ষার্থীদের অধিকার রক্ষায় আমরা দৃঢ়
+                প্রতিশ্রুতিবদ্ধ, ভবিষ্যৎ প্রজন্মের জন্য ন্যায় ও সমতার ভিত্তি
+                গড়ে তুলছি।
+              </p>
+              <div class="border border-[#0B3B2F] w-[85%]"></div>
+            </div>
+          </div>
+
+          <!-- socials -->
+
+          <div
+            class="flex items-center gap-4 md:gap-6 lg:gap-8 mt-4 md:mt-5 lg:mt-7"
+          >
+            <!-- fb -->
+            <span class="w-8 h-8">
+              <img src="../images/icons/fb-red.svg" alt="" />
+            </span>
+            <!-- insta -->
+            <span class="w-8 h-8">
+              <img src="../images/icons/insta-red.svg" alt="" />
+            </span>
+            <!-- x -->
+            <span class="w-8 h-8">
+              <img src="../images/icons/red-x.svg" alt="" />
+            </span>
+          </div>
+        </div>
+
+        <!-- center content -->
+        <div class="w-64 h-auto flex flex-col items-start hidden md:block">
+          <nav class="text-[#F9FAFB] rounded md:ps-10 lg:ps-10 xl:ps-0">
+            <ul class="space-y-4 font-normal font-liador text-sm md:text-base">
+              <li
+                class="cursor-pointer transition duration-200 hover:underline"
+              >
+                হোম
+              </li>
+              <li
+                class="cursor-pointer transition duration-200 hover:underline"
+              >
+                কমিটি তালিকা
+              </li>
+              <li
+                class="cursor-pointer transition duration-200 hover:underline"
+              >
+                কার্যক্রম
+              </li>
+              <li
+                class="cursor-pointer transition duration-200 hover:underline"
+              >
+                ফটো গ্যালারি
+              </li>
+              <li
+                class="cursor-pointer transition duration-200 hover:underline"
+              >
+                সংবিধি
+              </li>
+              <li
+                class="cursor-pointer transition duration-200 hover:underline"
+              >
+                অভিযোগ
+              </li>
+              <li
+                class="cursor-pointer transition duration-200 hover:underline"
+              >
+                নোটিশ
+              </li>
+              <li
+                class="cursor-pointer transition duration-200 hover:underline"
+              >
+                সাবস্ক্রিপশন
+              </li>
+              <li
+                class="cursor-pointer transition duration-200 hover:underline"
+              >
+                ইতিহাস
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="flex justify-between mt-8 md:mt-0">
+          <!-- md:hidden -->
+          <div class="w-64 h-auto flex flex-col items-start md:hidden">
+            <nav class="text-[#F9FAFB] rounded">
+              <ul
+                class="space-y-4 font-normal font-liador text-sm md:text-base"
+              >
+                <li
+                  class="cursor-pointer transition duration-200 hover:underline"
+                >
+                  হোম
+                </li>
+                <li
+                  class="cursor-pointer transition duration-200 hover:underline"
+                >
+                  কমিটি তালিকা
+                </li>
+                <li
+                  class="cursor-pointer transition duration-200 hover:underline"
+                >
+                  কার্যক্রম
+                </li>
+                <li
+                  class="cursor-pointer transition duration-200 hover:underline"
+                >
+                  ফটো গ্যালারি
+                </li>
+                <li
+                  class="cursor-pointer transition duration-200 hover:underline"
+                >
+                  সংবিধি
+                </li>
+                <li
+                  class="cursor-pointer transition duration-200 hover:underline"
+                >
+                  অভিযোগ
+                </li>
+                <li
+                  class="cursor-pointer transition duration-200 hover:underline"
+                >
+                  নোটিশ
+                </li>
+                <li
+                  class="cursor-pointer transition duration-200 hover:underline"
+                >
+                  সাবস্ক্রিপশন
+                </li>
+                <li
+                  class="cursor-pointer transition duration-200 hover:underline"
+                >
+                  ইতিহাস
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <!-- right content -->
+          <div class="w-[300px]">
+            <div class="text-[#FEFEFE] flex flex-col items-start space-y-3">
+              <div class="flex md:gap-5 gap-4">
+                <span>
+                  <img
+                    src="../images/icons/red-location.svg"
+                    class="w-10"
+                    alt=""
+                  />
+                </span>
+                <p>বাড়ি নং XXX, সড়ক নং XXX, এলাকা, শহর - XXXX, বাংলাদেশ</p>
+              </div>
+              <!--  -->
+              <div class="flex md:gap-5 gap-4">
+                <span>
+                  <img
+                    src="../images/icons/red-phone-icon.svg"
+                    class="w-6"
+                    alt=""
+                  />
+                </span>
+                <p>+৮৮ ০১৭XXXXXXXX</p>
+              </div>
+              <!--  -->
+              <div class="flex md:gap-5 gap-4">
+                <span>
+                  <img src="../images/icons/red-mail.svg" class="w-6" alt="" />
+                </span>
+                <p>info@example.com</p>
+              </div>
+            </div>
+
+            <button
+              class="py-4.5 px-[34px] bg-[#F42A40] rounded-[30px] font-liador md:text-[16px] text-sm text-[#FEFEFE] mt-8 md:mt-12"
+            >
+              সরাসরি যোগাযোগ করুন
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- for sm -->
+
+      <!-- bottom -->
+      <div
+        class="flex items-center justify-center border border-[#0B3B2F] pt-8 pb-6"
+      >
+        <p
+          class="font-liador font-normal text-sm md:text-base tracking-wide text-[#FEFEFE]"
+        >
+          2025 বাংলাদেশ জাতীয়তাবাদী ছাত্রদল (জেসিডি)। সর্বস্বত্ব সংরক্ষিত।
+        </p>
+      </div>
+    </footer>
+
+    <!-- JS for Mobile Menu Toggle -->
+    <script>
+      const btn = document.getElementById("mobile-menu-btn");
+      const menu = document.getElementById("mobile-menu");
+      let isOpen = false;
+
+      btn.addEventListener("click", () => {
+        isOpen = !isOpen;
+        menu.classList.toggle("hidden");
+
+        // Change button text based on toggle
+        btn.innerHTML = isOpen ? "&#10005;" : "&#9776;";
+      });
+    </script>
+  </body>
+  <script
+    src="https://kit.fontawesome.com/ab933b7f51.js"
+    crossorigin="anonymous"
+  ></script>
+</html>
