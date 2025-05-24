@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="bn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>অভিযোগ ফর্ম</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-[#F4F4F4]">
+    <section class="w-full bg-[#006A4E] text-white py-3.5 px-4">
+      <div class="container mx-auto flex items-center relative">
+        <div
+          class="font-normal text-[20px] text-[#FEFEFE] leading-[100%] tracking-[0%] w-full lg:text-center"
+        >
+          শিক্ষা, ঐক্য, প্রগতি
+        </div>
+        <div class="flex space-x-4 md:space-x-8 absolute right-[0px] text-3xl">
+          <a
+            href="#"
+            class="text-[#F4F4F4] hover:text-gray-200 transition-colors"
+          >
+            <i class="fa-brands fa-square-facebook"></i>
+          </a>
+          <a
+            href="#"
+            class="text-[#F4F4F4] hover:text-gray-200 transition-colors"
+          >
+            <i class="fa-brands fa-square-instagram"></i>
+          </a>
+          <a
+            href="#"
+            class="text-[#F4F4F4] hover:text-gray-200 transition-colors"
+          >
+            <i class="fa-brands fa-square-twitter"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- Header -->
+    <header
+      class="w-full text-black bg-[#F4F4F4] shadow-[4px_4px_16px_0px_#0000000A]"
+    >
+      <div
+        class="container mx-auto pe-4 sm:pe-0 md:py-[24px] py-4 flex items-center justify-between relative"
+      >
+        <!-- Mobile Menu Button -->
+        <button
+          id="mobile-menu-btn"
+          class="md:hidden focus:outline-none ml-auto text-2xl font-bold text-black"
+        >
+          &#9776;
+        </button>
+
+        <!-- Logo Centered -->
+        <div
+          class="flex-shrink-0 absolute top-0 md:top-2.5 sm:left-0 z-10 left-4 md:left-1/2 transform md:-translate-x-1/2 w-8 h-8 mt-[16px] md:mt-0 h-10 w-10 md:h-[124px] md:w-[124px]"
+        >
+          <img
+            src="../images/bnp-logo.svg"
+            alt="Logo"
+            class="w-full h-full object-cover"
+          />
+        </div>
+
+        <!-- Desktop Navs -->
+        <nav
+          class="hidden md:flex items-center justify-between text-[16px] font-normal w-[40%]"
+        >
+          <ul class="flex w-full justify-between items-center">
+            <li class="cursor-pointer hover:text-red-500">
+              <a href="/pages/committee.html">কমিটি তালিকা</a>
+            </li>
+            <li class="cursor-pointer hover:text-red-500">
+              <a href="/pages/karjokrom.html">কার্যক্রম</a>
+            </li>
+            <li class="cursor-pointer hover:text-red-500">
+              <a href="/pages/niyomaboli.html">নিয়মাবলী</a>
+            </li>
+            <li class="cursor-pointer hover:text-red-500">
+              <a href="/pages/notice.html">নোটিশ</a>
+            </li>
+          </ul>
+        </nav>
+
+        <nav
+          class="hidden md:flex items-center text-[16px] font-normal w-[40%]"
+        >
+          <ul class="flex w-full justify-between items-center">
+            <li class="cursor-pointer hover:text-red-500">
+              <a href="/pages/history.html">ইতিহাস</a>
+            </li>
+            <li class="cursor-pointer hover:text-red-500">
+              <a href="../pages/photo-gallery.html">ফটো গ্যালারি</a>
+            </li>
+            <li class="cursor-pointer hover:text-red-500">
+              <a href="/pages/ovijog.html">অভিযোগ</a>
+            </li>
+            <li class="cursor-pointer hover:text-red-500">
+              <a href="">সাবস্ক্রিপশন</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- Mobile Menu Dropdown -->
+      <div id="mobile-menu" class="md:hidden hidden pb-4 mt-3 ps-4.5 sm:ps-5">
+        <ul class="space-y-2 text-[16px] font-normal">
+          <li class="cursor-pointer hover:text-red-500">
+            <a href="/pages/committee.html">কমিটি তালিকা</a>
+          </li>
+          <li class="cursor-pointer hover:text-red-500">
+            <a href="/pages/karjokrom.html">কার্যক্রম</a>
+          </li>
+          <li class="cursor-pointer hover:text-red-500">
+            <a href="/pages/niyomaboli.html">নিয়মাবলী</a>
+          </li>
+          <li class="cursor-pointer hover:text-red-500">
+            <a href="/pages/notice.html">নোটিশ</a>
+          </li>
+          <li class="cursor-pointer hover:text-red-500">
+            <a href="/pages/history.html">ইতিহাস</a>
+          </li>
+          <li class="cursor-pointer hover:text-red-500">
+            <a href="/pages/photo-gallery.html">ফটো গ্যালারি</a>
+          </li>
+          <li class="cursor-pointer hover:text-red-500">
+            <a href="/pages/ovijog.html">অভিযোগ</a>
+          </li>
+          <li class="cursor-pointer hover:text-red-500">
+            <a href="">সাবস্ক্রিপশন</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <!-- Main Content -->
+    <section
+      class="max-w-2xl mx-auto bg-white shadow-md rounded-lg mt-12 md:mt-16 lg:mt-20 p-8 tracking-wide bg-gray-100 font-sans leading-relaxed"
+    >
+      <!-- Header -->
+      <h1 class="text-3xl font-bold text-center text-green-700 mb-4">
+        অভিযোগ ফর্ম
+      </h1>
+      <p class="text-center text-gray-700 mb-8">
+        নিচের ফর্মটি পূরণ করে আপনার অভিযোগ বা পরামর্শ আমাদের জানান।
+      </p>
+
+      <!-- Complaint Form -->
+      <form id="complaintForm" class="space-y-6">
+        <!-- নাম -->
+        <div>
+          <label class="block text-gray-800 font-medium mb-1">নাম</label>
+          <input
+            type="text"
+            name="name"
+            placeholder="আপনার নাম লিখুন"
+            class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-green-600 focus:outline-none"
+          />
+        </div>
+
+        <!-- ইমেইল -->
+        <div>
+          <label class="block text-gray-800 font-medium mb-1"
+            >ইমেইল (ঐচ্ছিক)</label
+          >
+          <input
+            type="email"
+            name="email"
+            placeholder="আপনার ইমেইল (যদি থাকে)"
+            class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-green-600 focus:outline-none"
+          />
+        </div>
+
+        <!-- বিষয় -->
+        <div>
+          <label class="block text-gray-800 font-medium mb-1">বিষয়</label>
+          <input
+            type="text"
+            name="subject"
+            placeholder="অভিযোগের বিষয় লিখুন"
+            class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-green-600 focus:outline-none"
+          />
+        </div>
+
+        <!-- অভিযোগের বিবরণ -->
+        <div>
+          <label class="block text-gray-800 font-medium mb-1"
+            >অভিযোগের বিবরণ</label
+          >
+          <textarea
+            name="description"
+            rows="5"
+            placeholder="আপনার অভিযোগ বিস্তারিতভাবে লিখুন..."
+            class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-green-600 focus:outline-none"
+          ></textarea>
+        </div>
+
+        <!-- জমা দিন বাটন -->
+        <div class="text-center">
+          <button
+            type="submit"
+            class="bg-green-600 text-white px-6 py-2 rounded-md hover:bg-green-700 transition"
+          >
+            জমা দিন
+          </button>
+        </div>
+      </form>
+    </section>
+
+    <!-- Script to log form data -->
+    <script>
+      const form = document.getElementById("complaintForm");
+
+      form.addEventListener("submit", function (e) {
+        e.preventDefault(); // Prevent page reload
+
+        const formData = new FormData(form);
+        const data = {
+          name: formData.get("name"),
+          email: formData.get("email"),
+          subject: formData.get("subject"),
+          description: formData.get("description"),
+        };
+
+        console.log("অভিযোগ ফর্মের তথ্য:", data);
+      });
+    </script>
+  </body>
+</html>
