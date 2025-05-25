@@ -60,7 +60,7 @@
     </section>
     <!-- header -->
     <header
-      class="w-full text-black bg-[#F4F4F4] shadow-sm shadow-[4px_4px_16px_0px_#0000000A]"
+      class="w-full text-black bg-[#F4F4F4] shadow-sm drop-shadow-[4px_4px_16px_#0000000A]"
     >
       <div
         class="container mx-auto pe-4 sm:pe-0 md:py-[24px] py-4 flex items-center justify-between relative"
@@ -143,7 +143,7 @@
             <a href="/pages/history.html">ইতিহাস</a>
           </li>
           <li class="cursor-pointer hover:text-red-500">
-            <a href="../pages/photo-gallery.html">ফটো গ্যালারি</a>
+            <a href="/pages/photo-gallery.html">ফটো গ্যালারি</a>
           </li>
           <li class="cursor-pointer hover:text-red-500">
             <a href="/pages/ovijog.html">অভিযোগ</a>
@@ -154,107 +154,195 @@
         </ul>
       </div>
     </header>
+    <!-- সদস্য পরিচিতি target menu -->
+    <section class="bg-[#F4F4F4]">
+      <div class="container px-4 md:px-4">
+        <div class="py-4 px-4 text-sm text-[#424344] flex space-x-1">
+          <!-- হোম পেজ -->
+          <a href="../index.html" class="hover:underline">হোম পেজ</a>
+          <span
+            ><svg
+              width="16"
+              height="17"
+              viewBox="0 0 16 17"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M5.96658 13.78L10.3132 9.43333C10.8266 8.92 10.8266 8.08 10.3132 7.56667L5.96658 3.22"
+                stroke="#424344"
+                stroke-width="1.5"
+                stroke-miterlimit="10"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </span>
 
-    <section
-      class="lg:pt-24 md:pt-20 pt-16 lg:pb-20 md:pb-16 pb-12 px-4 md:px-0 bg-[#F4F4F4]"
-    >
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-        <div class="grid gap-4">
-          <div>
-            <img
-              class="h-auto max-w-full rounded-lg"
-              src="/images/zia-ur-rahman-image.svg"
-              alt=""
-            />
-          </div>
-          <div>
-            <img
-              class="h-auto max-w-full rounded-lg"
-              src="/images/khaleda-zia-image.svg"
-              alt=""
-            />
-          </div>
-          <div>
-            <img
-              class="h-auto max-w-full rounded-lg"
-              src="/images/ziaa-program-image.svg"
-              alt=""
-            />
-          </div>
-        </div>
-        <div class="grid gap-4">
-          <div>
-            <img
-              class="h-auto max-w-full rounded-lg"
-              src="/images/july-biplob-image.svg"
-              alt=""
-            />
-          </div>
-          <div>
-            <img
-              class="h-auto max-w-full rounded-lg"
-              src="/images/golden-chapter-image.svg"
-              alt=""
-            />
-          </div>
-          <div>
-            <img
-              class="h-auto max-w-full rounded-lg"
-              src="/images/new/khaleda-somabesh.png"
-              alt=""
-            />
-          </div>
-        </div>
-        <div class="grid gap-4">
-          <div>
-            <img
-              class="h-auto max-w-full rounded-lg"
-              src="/images/new/somabesh-2.png"
-              alt=""
-            />
-          </div>
-          <div>
-            <img
-              class="h-auto max-w-full rounded-lg"
-              src="/images/new/somabesh-3.png"
-              alt=""
-            />
-          </div>
-          <div>
-            <img
-              class="h-auto max-w-full rounded-lg"
-              src="/images/new/founding-section-image-2--de49.png"
-              alt=""
-            />
-          </div>
-        </div>
-        <div class="grid gap-4">
-          <div>
-            <img
-              class="h-auto max-w-full rounded-lg"
-              src="/images/new/Ziaur-Rahman,-during-canal-digging-program.png"
-              alt=""
-            />
-          </div>
-          <div>
-            <img
-              class="h-auto max-w-full rounded-lg"
-              src="/images/new//mamun.png"
-              alt=""
-            />
-          </div>
-          <div>
-            <img
-              class="h-auto max-w-full rounded-lg"
-              src="/images/new/Ziaur-Rahman,-during-canal-digging-program.png"
-              alt=""
-            />
-          </div>
+          <!-- কমিটি তালিকা -->
+          <a href="../pages/committee.html" class="hover:underline"
+            >কমিটি তালিকা</a
+          >
+          <span
+            ><svg
+              width="16"
+              height="17"
+              viewBox="0 0 16 17"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M5.96658 13.78L10.3132 9.43333C10.8266 8.92 10.8266 8.08 10.3132 7.56667L5.96658 3.22"
+                stroke="#424344"
+                stroke-width="1.5"
+                stroke-miterlimit="10"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </span>
+
+          <!-- সদস্য পরিচিতি -->
+          <span class="text-[#006A4E]">সদস্য পরিচিতি</span>
         </div>
       </div>
     </section>
 
-    <!-- Upcoming Events -->
+    <!-- page title -->
+    <section class="md:pt-10 pt-8 lg:pt-14 px-4 md:px-0 bg-[#F4F4F4] mt-0">
+      <div class="container mx-auto px-4">
+        <div
+          class="w-full md:max-w-3xl lg:max-w-5xl mx-auto space-y-4 md:space-y-6 px-4 lg:px-14"
+        >
+          <h2
+            class="font-semibold text-2xl text-[#006A4E] md:text-[36px] md:leading-12 lg:leading-[100%] tracking-[0%] font-liador text-center"
+          >
+            সদস্য পরিচিতি
+          </h2>
+          <p
+            class="text-[#5D5D5D] font-normal text-sm md:text-base font-liador"
+          >
+            জাতীয়তাবাদী চেতনায় গড়া আমাদের প্রতিটি সদস্যই সংগ্রাম, নেতৃত্ব, ও
+            উন্নয়নের প্রতীক। জানুন তাদের গল্প, অবদান ও ভবিষ্যৎ লক্ষ্য।
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="w-full bg-cover bg-center relative pt-5 md:pt-10 lg:pt-14 pb-6 md:pb-20 lg:pb-[120px] bg-[#F4F4F4]"
+    >
+      <!-- bg-[#F4F4F4] -->
+      <div class="container mx-auto">
+        <div
+          class="md:flex justify-start items-start gap-12 xl:gap-16 px-4 md:px-0"
+        >
+          <img
+            src="/../images/committee/general-secretary.png"
+            class="md:w-[40%] lg:w-[400px] lg:h-[528px]"
+          />
+
+          <!--  -->
+          <div class="rounded-lg p-8">
+            <!-- Name -->
+            <h2
+              class="text-[#383838] text-[24px] leading-[100%] tracking-[0%] font-semibold mb-2"
+            >
+              কামরুল ইসলাম নয়ন
+            </h2>
+
+            <!-- Details -->
+            <div class="pt-6 text-[#5D5D5D] text-sm md:text-base">
+              <p class="font-normal mb-2">
+                <span class="font-semibold">পদবি:</span> কেন্দ্রীয় কমিটির
+                সাধারণ সম্পাদক (২০১৫ - বর্তমান)
+              </p>
+              <p class="font-normal mb-2">
+                <span class="font-semibold">বিশ্ববিদ্যালয়:</span> ঢাকা
+                বিশ্ববিদ্যালয়
+              </p>
+              <p class="font-normal mb-2">
+                <span class="font-semibold">যোগদানের সাল:</span> ২০১৫
+              </p>
+              <p class="font-normal mb-4">
+                <span class="font-semibold">পূর্বের অভিজ্ঞতা:</span> ইউনিট
+                সহ-সভাপতি (২০১৯-২০২১)
+              </p>
+            </div>
+
+            <!-- Contributions -->
+            <p class="text-[#5D5D5D] text-sm md:text-base mb-2">বিশেষ অবদান:</p>
+            <ul class="text-sm md:text-base text-[#5D5D5D] space-y-2">
+              <li class="flex items-start space-x-2">
+                <img src="/images/icons/li-with-rounded-ok-icon.svg" alt="" />
+                <span> গণতান্ত্রিক আন্দোলনে নেতৃত্বদান </span>
+              </li>
+              <li class="flex items-start space-x-2">
+                <img src="/images/icons/li-with-rounded-ok-icon.svg" alt="" />
+                <span> সংগঠনের পুনর্গঠনে গুরুত্বপূর্ণ ভূমিকা </span>
+              </li>
+              <li class="flex items-start space-x-2">
+                <img src="/images/icons/li-with-rounded-ok-icon.svg" alt="" />
+                <span> নতুন সদস্যদের সদস্যত্ব প্রশিক্ষণে অগ্রণী ভূমিকা </span>
+              </li>
+            </ul>
+
+            <!-- Social Icons -->
+            <div class="flex space-x-4 mt-4 md:mt-5 lg:mt-7">
+              <a
+                href="#"
+                class="text-blue-700 hover:text-blue-800 w-10 h-10 bg-[#F42A40] rounded-full p-1 flex items-center justify-center"
+              >
+                <img src="/images/icons/fb-red-white.svg" alt="" />
+              </a>
+              <a
+                href="#"
+                class="text-blue-700 hover:text-blue-800 w-10 h-10 bg-[#F42A40] rounded-full p-2.5 flex items-center justify-center"
+              >
+                <img
+                  src="/images/icons/twitter-red-white.svg"
+                  class=""
+                  alt=""
+                />
+              </a>
+              <a
+                href="#"
+                class="text-blue-700 hover:text-blue-800 w-10 h-10 bg-[#F42A40] rounded-full p-1 flex items-center justify-center"
+              >
+                <img src="/images/icons/in-red-white.svg" class="" alt="" />
+              </a>
+            </div>
+          </div>
+
+          <!-- <div class="md:w-[540px] pt-8 md:pt-0">
+            <h2
+              class="font-semibold text-2xl md:text-[36px] text-[#006A4E] md:leading-12 lg:leading-[100%] tracking-[0%] font-liador"
+            >
+              কমিটি তালিকা
+            </h2>
+
+            <p
+              class="leading-[30px] font-normal md:text-base text-md tracking-[0%] text-[#5D5D5D] font-liador pt-6"
+            >
+              জাতীয়তাবাদী চেতনায় গঠিত আমাদের কমিটি গণতন্ত্র, স্বাধীনতা ও
+              শিক্ষার্থীদের অধিকার রক্ষায় অবিচল। প্রতিটি ইউনিট ও ওয়ার্ড
+              পর্যায়ে দায়িত্বশীল নেতাকর্মীরা সংগঠনের আদর্শ বাস্তবায়নে
+              প্রতিজ্ঞাবদ্ধ। এখানে কেন্দ্রীয় কমিটি থেকে স্থানীয় পর্যায়ের সব
+              কমিটির তথ্য এবং নতুন নোটিশ বা পরিবর্তনের আপডেট সহজেই পাওয়া যাবে।
+            </p>
+
+            <div class="w-64 pt-10">
+              <a
+                href="http://"
+                class="font-liador font-normal text-base md:text-[18px] leading-2 text-[#FEFEFE] px-10 py-4 bg-[#F20D28] rounded-lg hover:bg-[#F42A50] hover:text-white transition-colors duration-300 text-center hidden sm:block"
+              >
+                দফা ডাউনলোড করুন</a
+              >
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </section>
 
     <!-- footer -->
     <footer class="bg-[#111816]">

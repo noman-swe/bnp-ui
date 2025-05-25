@@ -156,23 +156,25 @@
     </header>
 
     <!-- কমিটি তালিকা -->
-    <section class="w-full bg-cover bg-center relative bg-[#F4F4F4]">
+    <section
+      class="w-full  bg-cover bg-center relative bg-[#F4F4F4] md:mt-10 md:mt-[60px]"
+    >
       <!-- bg-[#F4F4F4] -->
       <div class="container mx-auto bg-[#F4F4F4]">
         <div
-          class="md:flex justify-start items-center gap-12 xl:gap-16 md:mt-10 md:mt-[60px] pt-4 md:pt-6 pb-6 md:pb-20 px-4 md:px-0"
+          class="md:flex justify-start items-center gap-12 xl:gap-16 pt-4 md:pt-6 pb-6 md:pb-20 px-4 md:px-0"
         >
           <!-- <div></div> -->
           <img
-            src="/../../images/committee/tareqZia.svg"
-            class="md:w-[40%] lg:max-w-full"
+            src="/../images/specific-committee.png"
+            class="md:w-[40%] 2xl:max-w-full lg:w-[502px] lg:h-[416px]"
           />
 
           <div class="md:w-[540px] pt-8 md:pt-0">
             <h2
               class="font-semibold text-2xl md:text-[36px] text-[#006A4E] md:leading-12 lg:leading-[100%] tracking-[0%] font-liador"
             >
-              কমিটি তালিকা
+              কাফরুল থানা ছাত্রদল
             </h2>
 
             <p
@@ -199,20 +201,22 @@
     </section>
 
     <!-- আমাদের শক্তি, আমাদের কমিটি -- tabs -->
+      
     <section
       class="bg-[#FEFEFE] py-14 md:py-20 px-4 md:px-0"
     >
       <div class="container mx-auto">
-        <div class="flex justify-between items-center bg-white gap-28">
-                   
-            <div class="relative w-1/3">
+        <div class="flex flex-col md:flex-row justify-between items-center bg-white gap-4 md:gap-28">
+        
+           <!--  -->
+            <div class="relative w-1/2 md:w-1/4 ">
                 <!-- Main Dropdown Toggle -->
                   <div
                     id="committee-dropdown-toggle"
                     class="flex items-center justify-center py-2.5 px-4 lg:py-5  gap-4 md:gap-5 rounded-md text-[#5D5D5D] cursor-pointer - border border-[#CFCFCF] text-base bg-[#F4F4F4] font-liador"
                     onclick="document.getElementById('committee-dropdown-menu').classList.toggle('hidden')"
                   >
-                    <span class="text-base font-liador font-normal">কমিটি সমূহ</span>
+                    <span class="text-base font-liador font-normal">ওয়ার্ড কমিটি সমূহ</span>
                     <svg class="w-5 h-5" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
                       <polyline fill="none" stroke="#5D5D5D" stroke-width="2" stroke-linejoin="bevel" stroke-miterlimit="10" points="15,24 32,41 49,24" />
                     </svg>
@@ -229,18 +233,19 @@
                           onclick="event.preventDefault(); document.getElementById('thana-submenu').classList.toggle('hidden')"
                           class="block px-4 py-2 text-[#5D5D5D] text-lg md:text-xl hover:bg-gray-100 font-semibold md:font-bold"
                         >
-                          থানা কমিটি
+                          কাফরুল থানা কমিটি
                         </a>
                         <ul id="thana-submenu" class="hidden  text-[#5D5D5D] text-sm md:text-base ">
-                          <li><a href="../pages/specific-committee.html" class="block px-4 py-2 border-b border-[#CFCFCF] hover:bg-[#006A4E] hover:text-[#FEFEFE]">কাফরুল থানা ছাত্রদল</a></li>
-                          <li><a href="#" class="block px-4 py-2 border-b border-[#CFCFCF] hover:bg-[#006A4E] hover:text-[#FEFEFE]">মিরপুর থানা ছাত্রদল</a></li>
-                          <li><a href="#" class="block px-4 py-2 border-b border-[#CFCFCF] hover:bg-[#006A4E] hover:text-[#FEFEFE]">মোহম্মদপুর থানা ছাত্রদল</a></li>
-                          <li><a href="#" class="block px-4 py-2 border-b border-[#CFCFCF] hover:bg-[#006A4E] hover:text-[#FEFEFE]">পল্লবী থানা ছাত্রদল</a></li>
+                          <li><a href="../pages/specific-committee.html" class="block px-4 py-2 border-b border-[#CFCFCF] hover:bg-[#006A4E] hover:text-[#FEFEFE]">৪ নং ওয়ার্ড ছাত্রদল</a></li>
+                          <li><a href="#" class="block px-4 py-2 border-b border-[#CFCFCF] hover:bg-[#006A4E] hover:text-[#FEFEFE]">১৬ নং ওয়ার্ড ছাত্রদল</a></li>
+                          <li><a href="#" class="block px-4 py-2 border-b border-[#CFCFCF] hover:bg-[#006A4E] hover:text-[#FEFEFE]">৯৪ নং ওয়ার্ড ছাত্রদল</a></li>
+                          <li><a href="#" class="block px-4 py-2 border-b border-[#CFCFCF] hover:bg-[#006A4E] hover:text-[#FEFEFE]">১৪ নং ওয়ার্ড ছাত্রদল</a></li>
                         </ul>
+                        
                       </li>
 
                       <!-- শিক্ষা প্রতিষ্ঠান কমিটি Accordion -->
-                      <li>
+                      <li class="hidden">
                         <a
                           href="#"
                           onclick="event.preventDefault(); document.getElementById('institution-submenu').classList.toggle('hidden')"
@@ -264,288 +269,144 @@
                   </div>                  
               </div>
                 <!-- new test with accordion-->
-<aside>
- 
-<!-- Essential JavaScript -->
-<script>
-  // Toggle main dropdown menu
-  document.getElementById('committee-dropdown-toggle').addEventListener('click', function () {
-    document.getElementById('committee-dropdown-menu').classList.toggle('hidden');
-  });
 
-  // Toggle submenus (accordion)
-  function toggleSubmenu(event, submenuId) {
-    event.preventDefault();
-    const submenu = document.getElementById(submenuId);
-    submenu.classList.toggle('hidden');
-  }
-
-  // Optional: Close dropdown if clicked outside
-  document.addEventListener('click', function (e) {
-    const dropdown = document.getElementById('committee-dropdown-menu');
-    const toggle = document.getElementById('committee-dropdown-toggle');
-    if (!toggle.contains(e.target) && !dropdown.contains(e.target)) {
-      dropdown.classList.add('hidden');
-    }
-  });
-</script>
-
-</aside>
-
-            <!--  -->
-            <button
-              id="tab-central-section"
-              class="w-1/3 py-2.5 lg:py-5 rounded-md text-[#5D5D5D] text-base hover:bg-[#006A4E] hover:text-[#FEFEFE] font-liador -  border border-[#CFCFCF] text-base bg-[#F4F4F4]"
-            >
-              কেন্দ্রীয় কমিটি
-            </button>
-            <!-- Inactive tab -->
-            <button
+           <button
               id="tab-dhaka-west-section"
-             class="w-1/3 py-2.5 lg:py-5 rounded-md text-[#5D5D5D] text-base hover:bg-[#006A4E] hover:text-[#FEFEFE] font-liador -  border border-[#CFCFCF] text-base bg-[#F4F4F4]"
+              class="w-1/2 md:w-1/4 py-2.5 lg:py-5 rounded-md text-[#5D5D5D] text-base hover:bg-[#006A4E] hover:text-[#FEFEFE] font-liador -  border border-[#CFCFCF] text-base bg-[#F4F4F4]"
             >
               ঢাকা-পশ্চিম শাখা কমিটি
             </button>
+            <!--  -->
+            <button
+              id="tab-thana-section"
+              class="w-1/2 md:w-1/4  py-2.5 lg:py-5 rounded-md text-[#5D5D5D] text-base hover:bg-[#006A4E] hover:text-[#FEFEFE] font-liador -  border border-[#CFCFCF] text-base bg-[#F4F4F4]"
+            >
+              কাফরুল থানা ছাত্রদল
+            </button>
+            <!-- Inactive tab -->
+            <button
+              id="tab-x-thana-section"
+             class="w-1/2 md:w-1/4  py-2.5 lg:py-5 rounded-md text-[#5D5D5D] text-base hover:bg-[#006A4E] hover:text-[#FEFEFE] font-liador -  border border-[#CFCFCF] text-base bg-[#F4F4F4]"
+            >
+             সাবেক কমিটি
+            </button>
+           
         </div>
 
         
           <!-- Central Section Content -->
           <div
-            id="central-section-content"
+            id="thana-section-content"
             class="bg-[#FEFEFE] rounded-md"
           >
-            <h3 class="text-base md:text-lg lg:text-xl font-semibold py-8 md:py-10 lg:py-14 font-liador text-[#006A4E]">কেন্দ্রীয় কমিটি</h3>
+            <h3 class="text-base md:text-lg lg:text-xl font-semibold py-8 md:py-10 lg:py-14 font-liador text-[#006A4E] text-center">মেয়াদ কাল : <span>ডিসেম্বর ২০২৪ - চলমান</span> </h3>
 
-            <!-- committee slider -->
-             <section
-              class="w-full relative bg-[#FEFEFE]  px-4 md:px-0"
-            >
-              <div class="container mx-auto">
-                  <div
-                    class="swiper multiple-slide-carousel swiper-container relative "
-                  >
-                    <div class="swiper-wrapper">
-                      <!-- 1 -->
-                      <div class="swiper-slide">
-                        <div class="flex flex-col items-center justify-center">
-                          <img
-                            src="../images/committee/president.png"
-                            alt=""
-                            class="h-full w-full object-cover rounded-lg"
-                          />
-                          <div
-                            class="font-liador flex flex-col items-center justify-center text-center mt-4 md:mt-6 md:gap-4 gap-2"
-                          >
-                            <h2
-                              class="font-semibold text-xl md:text-xl text-[#383838] tracking-wide"
-                            >
-                              কাজী রিয়াজুল হোসাইন
-                            </h2>
-                            <p
-                              class="text-[#5D5D5D] font-normal text-sm md:text-base tracking-wide"
-                            >
-                              সভাপতি
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                      <!-- 2 -->
-                      <div class="swiper-slide">
-                        <div class="flex flex-col items-center justify-center">
-                          <img
-                            src="../images/committee/general-secretary.png"
-                            alt=""
-                            class="h-full w-full object-cover rounded-lg"
-                          />
-                          <div
-                            class="font-liador flex flex-col items-center justify-center text-center mt-4 md:mt-6 md:gap-4 gap-2"
-                          >
-                            <h2
-                              class="font-semibold text-xl md:text-xl text-[#383838] tracking-wide"
-                            >
-                              কামরুল ইসলাম নয়ন
-                            </h2>
-                            <p
-                              class="text-[#5D5D5D] font-normal text-sm md:text-base tracking-wide"
-                            >
-                              সাধারণ সম্পাদক
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                      <!-- 3 -->
-                      <div class="swiper-slide">
-                        <div class="flex flex-col items-center justify-center">
-                          <img
-                            src="../images/committee/join-secretary.png"
-                            alt=""
-                            class="h-full w-full object-cover rounded-lg"
-                          />
-                          <div
-                            class="font-liador flex flex-col items-center justify-center text-center mt-4 md:mt-6 md:gap-4 gap-2"
-                          >
-                            <h2
-                              class="font-semibold text-xl md:text-xl text-[#383838] tracking-wide"
-                            >
-                              তাসলিমা আক্তার
-                            </h2>
-                            <p
-                              class="text-[#5D5D5D] font-normal text-sm md:text-base tracking-wide"
-                            >
-                              যুগ্ম সাধারণ সম্পাদক
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                      <!-- 4 -->
-                      <div class="swiper-slide">
-                        <div class="flex flex-col items-center justify-center">
-                          <img
-                            src="../images/committee/organizing-secretary.png"
-                            alt=""
-                            class="h-full w-full object-cover rounded-lg"
-                          />
-                          <div
-                            class="font-liador flex flex-col items-center justify-center text-center mt-4 md:mt-6 md:gap-4 gap-2"
-                          >
-                            <h2
-                              class="font-semibold text-xl md:text-xl text-[#383838] tracking-wide"
-                            >
-                              মাসুদ রানা
-                            </h2>
-                            <p
-                              class="text-[#5D5D5D] font-normal text-sm md:text-base tracking-wide"
-                            >
-                              সাংগঠনিক সম্পাদক
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                      <!-- 5 -->
-                      <div class="swiper-slide">
-                        <div class="flex flex-col items-center justify-center">
-                          <img
-                            src="../images/committee/3_0-removebg-preview.jpg"
-                            alt=""
-                            class="h-full w-full object-cover rounded-lg"
-                          />
-                          <div
-                            class="font-liador flex flex-col items-center justify-center text-center mt-4 md:mt-6 md:gap-4 gap-2"
-                          >
-                            <h2
-                              class="font-semibold text-xl md:text-xl text-[#383838] tracking-wide"
-                            >
-                              মারকাজুল হাসনাইন আলিফ
-                            </h2>
-                            <p
-                              class="text-[#5D5D5D] font-normal text-sm md:text-base tracking-wide"
-                            >
-                              সদস্য
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                      <!-- 6 -->
-                      <div class="swiper-slide">
-                        <div class="flex flex-col items-center justify-center">
-                          <img
-                            src="../../images/committee/president.png"
-                            alt=""
-                            class="h-full w-full object-cover rounded-lg"
-                          />
-                          <div
-                            class="font-liador flex flex-col items-center justify-center text-center mt-4 md:mt-6 md:gap-4 gap-2"
-                          >
-                            <h2
-                              class="font-semibold text-xl md:text-xl text-[#383838] tracking-wide"
-                            >
-                              বখতিয়ার মোল্লা
-                            </h2>
-                            <p
-                              class="text-[#5D5D5D] font-normal text-sm md:text-base tracking-wide"
-                            >
-                              সদস্য
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+            <!-- committee gallery -->
+        <div class="flex flex-wrap justify-center gap-[30px]">
+  <!-- card 1 -->
+  <div class="w-[270px]">
+    <img src="../images/committee/president.png" alt="President" class="w-[270px] h-[356px] object-cover" />
+    <h2 class="pt-6 pb-4 font-[600] text-[20px] leading-[100%] tracking-[0%] font-liador text-[#383838] text-center">
+      কাজী রিয়াজুল হোসাইন
+    </h2>
+    <p class="font-[400] text-[16px] leading-[100%] tracking-[0%] font-liador text-[#5D5D5D] text-center">
+      সভাপতি
+    </p>
+  </div>
 
-                    <button
-                      class="swiper-button-prev w-12 h-12 flex items-center justify-center focus:outline-none transition-colors duration-300 !top-[100px] md:!top-[160px] lg:!top-[180px] xl:!top-[200px]"
-                    >
-                      <svg
-                        width="48"
-                        height="48"
-                        viewBox="0 0 48 48"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="text-red-500"
-                      >
-                        <path
-                          d="M18 44H30C40 44 44 40 44 30V18C44 8 40 4 30 4H18C8 4 4 8 4 18V30C4 40 8 44 18 44Z"
-                          stroke="#006A4E"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                        <path
-                          d="M18 44H30C40 44 44 40 44 30V18C44 8 40 4 30 4H18C8 4 4 8 4 18V30C4 40 8 44 18 44Z"
-                          stroke="black"
-                          stroke-opacity="0.2"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                        <path
-                          d="M26.52 31.0599L19.48 23.9999L26.52 16.9399"
-                          stroke="#292D32"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-                    </button>
+  <!-- card 2 -->
+  <div class="w-[270px]">
+    <img src="../images/committee/president.png" alt="President" class="w-[270px] h-[356px] object-cover" />
+    <h2 class="pt-6 pb-4 font-[600] text-[20px] leading-[100%] tracking-[0%] font-liador text-[#383838] text-center">
+      কাজী রিয়াজুল হোসাইন
+    </h2>
+    <p class="font-[400] text-[16px] leading-[100%] tracking-[0%] font-liador text-[#5D5D5D] text-center">
+      সভাপতি
+    </p>
+  </div>
 
-                    <button
-                      class="swiper-button-next flex items-center justify-center focus:outline-none transition-colors duration-300 !top-[100px] md:!top-[160px] lg:!top-[180px] xl:!top-[200px]"
-                    >
-                      <svg
-                        width="48"
-                        height="48"
-                        viewBox="0 0 48 48"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M30 44H18C8 44 4 40 4 30V18C4 8 8 4 18 4H30C40 4 44 8 44 18V30C44 40 40 44 30 44Z"
-                          stroke="#006A4E"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                        <path
-                          d="M30 44H18C8 44 4 40 4 30V18C4 8 8 4 18 4H30C40 4 44 8 44 18V30C44 40 40 44 30 44Z"
-                          stroke="black"
-                          stroke-opacity="0.2"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                        <path
-                          d="M21.48 31.0599L28.52 23.9999L21.48 16.9399"
-                          stroke="#292D32"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-                    </button>
-                  </div>
-              </div>
-            </section>
-           
-          </div>
+  <!-- card 3 -->
+  <div class="w-[270px]">
+    <img src="../images/committee/president.png" alt="President" class="w-[270px] h-[356px] object-cover" />
+    <h2 class="pt-6 pb-4 font-[600] text-[20px] leading-[100%] tracking-[0%] font-liador text-[#383838] text-center">
+      কাজী রিয়াজুল হোসাইন
+    </h2>
+    <p class="font-[400] text-[16px] leading-[100%] tracking-[0%] font-liador text-[#5D5D5D] text-center">
+      সভাপতি
+    </p>
+  </div>
+</div>
+
+            <!-- committee gallery small-->
+ 
+            <div class="mt-5 md:mt-8 lg:mt-12 grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-x-[20px] gap-y-[36px] justify-center">
+  <!-- 12 Responsive Cards -->
+  <div class="w-full">
+    <img src="../images/committee/president.png" alt="Member" class="w-full object-cover" />
+    <h2 class="pt-[20px] pb-[10px] text-[#5D5D5D] font-bold text-base text-center">সানোয়ার আলম</h2>
+    <p class="text-[#5D5D5D] text-base font-normal text-center">সদস্য</p>
+  </div>
+  <div class="w-full">
+    <img src="../images/committee/president.png" alt="Member" class="w-full object-cover" />
+    <h2 class="pt-[20px] pb-[10px] text-[#5D5D5D] font-bold text-base text-center">সানোয়ার আলম</h2>
+    <p class="text-[#5D5D5D] text-base font-normal text-center">সদস্য</p>
+  </div>
+  <div class="w-full">
+    <img src="../images/committee/president.png" alt="Member" class="w-full object-cover" />
+    <h2 class="pt-[20px] pb-[10px] text-[#5D5D5D] font-bold text-base text-center">সানোয়ার আলম</h2>
+    <p class="text-[#5D5D5D] text-base font-normal text-center">সদস্য</p>
+  </div>
+  <div class="w-full">
+    <img src="../images/committee/president.png" alt="Member" class="w-full object-cover" />
+    <h2 class="pt-[20px] pb-[10px] text-[#5D5D5D] font-bold text-base text-center">সানোয়ার আলম</h2>
+    <p class="text-[#5D5D5D] text-base font-normal text-center">সদস্য</p>
+  </div>
+  <div class="w-full">
+    <img src="../images/committee/president.png" alt="Member" class="w-full object-cover" />
+    <h2 class="pt-[20px] pb-[10px] text-[#5D5D5D] font-bold text-base text-center">সানোয়ার আলম</h2>
+    <p class="text-[#5D5D5D] text-base font-normal text-center">সদস্য</p>
+  </div>
+  <div class="w-full">
+    <img src="../images/committee/president.png" alt="Member" class="w-full object-cover" />
+    <h2 class="pt-[20px] pb-[10px] text-[#5D5D5D] font-bold text-base text-center">সানোয়ার আলম</h2>
+    <p class="text-[#5D5D5D] text-base font-normal text-center">সদস্য</p>
+  </div>
+  <!-- Row 2 -->
+  <div class="w-full">
+    <img src="../images/committee/president.png" alt="Member" class="w-full object-cover" />
+    <h2 class="pt-[20px] pb-[10px] text-[#5D5D5D] font-bold text-base text-center">সানোয়ার আলম</h2>
+    <p class="text-[#5D5D5D] text-base font-normal text-center">সদস্য</p>
+  </div>
+  <div class="w-full">
+    <img src="../images/committee/president.png" alt="Member" class="w-full object-cover" />
+    <h2 class="pt-[20px] pb-[10px] text-[#5D5D5D] font-bold text-base text-center">সানোয়ার আলম</h2>
+    <p class="text-[#5D5D5D] text-base font-normal text-center">সদস্য</p>
+  </div>
+  <div class="w-full">
+    <img src="../images/committee/president.png" alt="Member" class="w-full object-cover" />
+    <h2 class="pt-[20px] pb-[10px] text-[#5D5D5D] font-bold text-base text-center">সানোয়ার আলম</h2>
+    <p class="text-[#5D5D5D] text-base font-normal text-center">সদস্য</p>
+  </div>
+  <div class="w-full">
+    <img src="../images/committee/president.png" alt="Member" class="w-full object-cover" />
+    <h2 class="pt-[20px] pb-[10px] text-[#5D5D5D] font-bold text-base text-center">সানোয়ার আলম</h2>
+    <p class="text-[#5D5D5D] text-base font-normal text-center">সদস্য</p>
+  </div>
+  <div class="w-full">
+    <img src="../images/committee/president.png" alt="Member" class="w-full object-cover" />
+    <h2 class="pt-[20px] pb-[10px] text-[#5D5D5D] font-bold text-base text-center">সানোয়ার আলম</h2>
+    <p class="text-[#5D5D5D] text-base font-normal text-center">সদস্য</p>
+  </div>
+  <div class="w-full">
+    <img src="../images/committee/president.png" alt="Member" class="w-full object-cover" />
+    <h2 class="pt-[20px] pb-[10px] text-[#5D5D5D] font-bold text-base text-center">সানোয়ার আলম</h2>
+    <p class="text-[#5D5D5D] text-base font-normal text-center">সদস্য</p>
+  </div>
+</div>
+
+ 
+            <!-- committee gallery small-->
+        
 
           <!-- Dhaka-West Section Content -->
           <div
@@ -783,6 +644,9 @@
             </section>  
           </div>
     </section>
+    <!-- আমাদের শক্তি, আমাদের কমিটি -- tabs -->
+
+   
 
     <section
       class="w-full pt-4 md:py-20 md:pb-20 px-4 md:px-0 bg-cover bg-center relative bg-[#F4F4F4]"
@@ -790,7 +654,12 @@
       <div class="container mx-auto">
         <div class="md:flex justify-start items-center gap-24 xl:gap-16">
           <div class="w-full md:w-[540px] lg:w-[700px] pt-8 md:pt-0">
-           
+            <!-- <h2
+              class="font-semibold text-2xl md:text-[36px] text-[#006A4E] md:leading-12 lg:leading-[100%] tracking-[0%] font-liador"
+            >
+              জুলাই বিপ্লব: এক গৌরবময় অধ্যায়
+            </h2> -->
+
             <p
               class="leading-[30px] font-normal md:text-base text-md tracking-tight text-[#5D5D5D] font-liador pt-6"
             >
@@ -1128,41 +997,11 @@
         btn.innerHTML = isOpen ? "&#10005;" : "&#9776;";
       });
     </script>
-
-    <!-- tab js -->
-      <script>
-      const centralBtn = document.getElementById("tab-central-section");
-      const dhakaWestBtn = document.getElementById("tab-dhaka-west-section");
-      const centralContent = document.getElementById("central-section-content");
-      const dhakaWestContent = document.getElementById("dhaka-west-section-content");
-
-      function setActiveTab(activeBtn, inactiveBtn, showContent, hideContent) {
-        // Button styling
-        activeBtn.classList.add("bg-green-900", "text-white");
-        activeBtn.classList.remove("bg-gray-100", "text-gray-700");
-        inactiveBtn.classList.remove("bg-green-900", "text-white");
-        inactiveBtn.classList.add("bg-gray-100", "text-gray-700");
-
-        // Content visibility
-        showContent.classList.remove("hidden");
-        hideContent.classList.add("hidden");
-      }
-
-      centralBtn.addEventListener("click", () => {
-        setActiveTab(centralBtn, dhakaWestBtn, centralContent, dhakaWestContent);
-      });
-
-      dhakaWestBtn.addEventListener("click", () => {
-        setActiveTab(dhakaWestBtn, centralBtn, dhakaWestContent, centralContent);
-      });
-
-  // Optional: Show one by default
-  // centralContent.classList.remove("hidden");
-  
-      </script>
+ 
 
     <!-- js -- card slider -- js -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
     <script>
       var swiper = new Swiper(".multiple-slide-carousel", {
         loop: true,
@@ -1193,7 +1032,78 @@
       });
     </script>
 
-<!-- committee somuhoo - dropdown -->
+    <!-- tab js -->
+    <script>
+      const thanaBtn = document.getElementById("tab-thana-section");
+      const dhakaWestBtn = document.getElementById("tab-dhaka-west-section");
+      const dhakaWestXThanaBtn = document.getElementById("tab-x-thana-section");
+      const thanaContent = document.getElementById("thana-section-content");
+      const dhakaWestContent = document.getElementById(
+        "dhaka-west-section-content"
+      );
+
+      function setActiveTab(activeBtn, inactiveBtn, showContent, hideContent) {
+        // Button styling
+        activeBtn.classList.add("bg-green-900", "text-white");
+        activeBtn.classList.remove("bg-gray-100", "text-gray-700");
+        inactiveBtn.classList.remove("bg-green-900", "text-white");
+        inactiveBtn.classList.add("bg-gray-100", "text-gray-700");
+
+        // Content visibility
+        showContent.classList.remove("hidden");
+        hideContent.classList.add("hidden");
+      }
+
+      thanaBtn.addEventListener("click", () => {
+        setActiveTab(
+          thanaBtn,
+          dhakaWestBtn,
+          thanaContent,
+          dhakaWestContent,
+          dhakaWestXThanaBtn
+        );
+      });
+
+      dhakaWestBtn.addEventListener("click", () => {
+        setActiveTab(
+          dhakaWestBtn,
+          thanaBtn,
+          dhakaWestContent,
+          thanaContent,
+          dhakaWestXThanaBtn
+        );
+      });
+
+      // Optional: Show one by default
+      // thanaContent.classList.remove("hidden");
+    </script>
+    <!--  -->
+      <aside>
+ 
+<!-- Essential JavaScript -->
+<script>
+  // Toggle main dropdown menu
+  document.getElementById('committee-dropdown-toggle').addEventListener('click', function () {
+    document.getElementById('committee-dropdown-menu').classList.toggle('hidden');
+  });
+
+  // Toggle submenus (accordion)
+  function toggleSubmenu(event, submenuId) {
+    event.preventDefault();
+    const submenu = document.getElementById(submenuId);
+    submenu.classList.toggle('hidden');
+  }
+
+  // Optional: Close dropdown if clicked outside
+  document.addEventListener('click', function (e) {
+    const dropdown = document.getElementById('committee-dropdown-menu');
+    const toggle = document.getElementById('committee-dropdown-toggle');
+    if (!toggle.contains(e.target) && !dropdown.contains(e.target)) {
+      dropdown.classList.add('hidden');
+    }
+  });
+</script>
+
 <script>
   const toggle = document.getElementById("committee-dropdown-toggle");
   const tabDropdownMenu = document.getElementById("committee-dropdown-menu");
@@ -1210,6 +1120,7 @@
   });
 </script>
 
+</aside>
 
   </body>
   <script
