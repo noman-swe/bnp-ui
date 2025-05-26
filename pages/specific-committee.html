@@ -26,6 +26,11 @@
       .team-member-card:hover {
         transform: translateY(-5px);
       }
+     .swiper-slide {
+      display: flex;
+      justify-content: center;
+    }
+   
     </style>
   </head>
   <body class="bg-[#F4F4F4]">
@@ -206,10 +211,10 @@
       class="bg-[#FEFEFE] py-14 md:py-20 px-4 md:px-0"
     >
       <div class="container mx-auto">
-        <div class="flex flex-col md:flex-row justify-between items-center bg-white gap-4 md:gap-28">
+        <div class="flex flex-col md:flex-row justify-between items-center gap-0 md:gap-8">
         
            <!--  -->
-            <div class="relative w-1/2 md:w-1/4 ">
+            <div class="relative w-2/3 md:w-1/4 ">
                 <!-- Main Dropdown Toggle -->
                   <div
                     id="committee-dropdown-toggle"
@@ -272,21 +277,21 @@
 
            <button
               id="tab-dhaka-west-section"
-              class="w-1/2 md:w-1/4 py-2.5 lg:py-5 rounded-md text-[#5D5D5D] text-base hover:bg-[#006A4E] hover:text-[#FEFEFE] font-liador -  border border-[#CFCFCF] text-base bg-[#F4F4F4]"
+              class="w-2/3 md:w-1/4 py-2.5 lg:py-5 rounded-md text-[#5D5D5D] text-base hover:bg-[#006A4E] hover:text-[#FEFEFE] font-liador -  border border-[#CFCFCF] text-base bg-[#F4F4F4]"
             >
               ঢাকা-পশ্চিম শাখা কমিটি
             </button>
             <!--  -->
             <button
               id="tab-thana-section"
-              class="w-1/2 md:w-1/4  py-2.5 lg:py-5 rounded-md text-[#5D5D5D] text-base hover:bg-[#006A4E] hover:text-[#FEFEFE] font-liador -  border border-[#CFCFCF] text-base bg-[#F4F4F4]"
+              class="w-2/3 md:w-1/4  py-2.5 lg:py-5 rounded-md text-[#5D5D5D] text-base hover:bg-[#006A4E] hover:text-[#FEFEFE] font-liador -  border border-[#CFCFCF] text-base bg-[#F4F4F4]"
             >
               কাফরুল থানা ছাত্রদল
             </button>
             <!-- Inactive tab -->
             <button
               id="tab-x-thana-section"
-             class="w-1/2 md:w-1/4  py-2.5 lg:py-5 rounded-md text-[#5D5D5D] text-base hover:bg-[#006A4E] hover:text-[#FEFEFE] font-liador -  border border-[#CFCFCF] text-base bg-[#F4F4F4]"
+             class="w-2/3 md:w-1/4  py-2.5 lg:py-5 rounded-md text-[#5D5D5D] text-base hover:bg-[#006A4E] hover:text-[#FEFEFE] font-liador -  border border-[#CFCFCF] text-base bg-[#F4F4F4]"
             >
              সাবেক কমিটি
             </button>
@@ -303,8 +308,8 @@
 
             <!-- committee gallery -->
         <div class="flex flex-wrap justify-center gap-[30px]">
-  <!-- card 1 -->
-  <div class="w-[270px]">
+  <!-- card 1  -- <a href="/pages/member-identity.html" class="w-full block">-->
+  <a class="w-[270px]" href="/pages/member-identity.html">
     <img src="../images/committee/president.png" alt="President" class="w-[270px] h-[356px] object-cover" />
     <h2 class="pt-6 pb-4 font-[600] text-[20px] leading-[100%] tracking-[0%] font-liador text-[#383838] text-center">
       কাজী রিয়াজুল হোসাইন
@@ -312,10 +317,10 @@
     <p class="font-[400] text-[16px] leading-[100%] tracking-[0%] font-liador text-[#5D5D5D] text-center">
       সভাপতি
     </p>
-  </div>
+  </a>
 
   <!-- card 2 -->
-  <div class="w-[270px]">
+  <a href="/pages/member-identity.html" class="w-[270px]">
     <img src="../images/committee/president.png" alt="President" class="w-[270px] h-[356px] object-cover" />
     <h2 class="pt-6 pb-4 font-[600] text-[20px] leading-[100%] tracking-[0%] font-liador text-[#383838] text-center">
       কাজী রিয়াজুল হোসাইন
@@ -323,10 +328,11 @@
     <p class="font-[400] text-[16px] leading-[100%] tracking-[0%] font-liador text-[#5D5D5D] text-center">
       সভাপতি
     </p>
-  </div>
+  </a>
 
   <!-- card 3 -->
-  <div class="w-[270px]">
+   
+  <a href="/pages/member-identity.html" class="w-[270px]">
     <img src="../images/committee/president.png" alt="President" class="w-[270px] h-[356px] object-cover" />
     <h2 class="pt-6 pb-4 font-[600] text-[20px] leading-[100%] tracking-[0%] font-liador text-[#383838] text-center">
       কাজী রিয়াজুল হোসাইন
@@ -334,75 +340,101 @@
     <p class="font-[400] text-[16px] leading-[100%] tracking-[0%] font-liador text-[#5D5D5D] text-center">
       সভাপতি
     </p>
-  </div>
+  </a>
 </div>
 
             <!-- committee gallery small-->
  
             <div class="mt-5 md:mt-8 lg:mt-12 grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-x-[20px] gap-y-[36px] justify-center">
-  <!-- 12 Responsive Cards -->
-  <div class="w-full">
-    <img src="../images/committee/president.png" alt="Member" class="w-full object-cover" />
-    <h2 class="pt-[20px] pb-[10px] text-[#5D5D5D] font-bold text-base text-center">সানোয়ার আলম</h2>
-    <p class="text-[#5D5D5D] text-base font-normal text-center">সদস্য</p>
-  </div>
-  <div class="w-full">
-    <img src="../images/committee/president.png" alt="Member" class="w-full object-cover" />
-    <h2 class="pt-[20px] pb-[10px] text-[#5D5D5D] font-bold text-base text-center">সানোয়ার আলম</h2>
-    <p class="text-[#5D5D5D] text-base font-normal text-center">সদস্য</p>
-  </div>
-  <div class="w-full">
-    <img src="../images/committee/president.png" alt="Member" class="w-full object-cover" />
-    <h2 class="pt-[20px] pb-[10px] text-[#5D5D5D] font-bold text-base text-center">সানোয়ার আলম</h2>
-    <p class="text-[#5D5D5D] text-base font-normal text-center">সদস্য</p>
-  </div>
-  <div class="w-full">
-    <img src="../images/committee/president.png" alt="Member" class="w-full object-cover" />
-    <h2 class="pt-[20px] pb-[10px] text-[#5D5D5D] font-bold text-base text-center">সানোয়ার আলম</h2>
-    <p class="text-[#5D5D5D] text-base font-normal text-center">সদস্য</p>
-  </div>
-  <div class="w-full">
-    <img src="../images/committee/president.png" alt="Member" class="w-full object-cover" />
-    <h2 class="pt-[20px] pb-[10px] text-[#5D5D5D] font-bold text-base text-center">সানোয়ার আলম</h2>
-    <p class="text-[#5D5D5D] text-base font-normal text-center">সদস্য</p>
-  </div>
-  <div class="w-full">
-    <img src="../images/committee/president.png" alt="Member" class="w-full object-cover" />
-    <h2 class="pt-[20px] pb-[10px] text-[#5D5D5D] font-bold text-base text-center">সানোয়ার আলম</h2>
-    <p class="text-[#5D5D5D] text-base font-normal text-center">সদস্য</p>
-  </div>
+  <!-- Row 1 -->
+  <a href="/pages/member-identity.html" class="w-full block">
+    <div>
+      <img src="../images/committee/president.png" alt="Member" class="w-full object-cover" />
+      <h2 class="pt-[20px] pb-[10px] text-[#5D5D5D] font-bold text-base text-center">সানোয়ার আলম</h2>
+      <p class="text-[#5D5D5D] text-base font-normal text-center">সদস্য</p>
+    </div>
+  </a>
+  <a href="/pages/member-identity.html" class="w-full block">
+    <div>
+      <img src="../images/committee/president.png" alt="Member" class="w-full object-cover" />
+      <h2 class="pt-[20px] pb-[10px] text-[#5D5D5D] font-bold text-base text-center">সানোয়ার আলম</h2>
+      <p class="text-[#5D5D5D] text-base font-normal text-center">সদস্য</p>
+    </div>
+  </a>
+  <a href="/pages/member-identity.html" class="w-full block">
+    <div>
+      <img src="../images/committee/president.png" alt="Member" class="w-full object-cover" />
+      <h2 class="pt-[20px] pb-[10px] text-[#5D5D5D] font-bold text-base text-center">সানোয়ার আলম</h2>
+      <p class="text-[#5D5D5D] text-base font-normal text-center">সদস্য</p>
+    </div>
+  </a>
+  <a href="/pages/member-identity.html" class="w-full block">
+    <div>
+      <img src="../images/committee/president.png" alt="Member" class="w-full object-cover" />
+      <h2 class="pt-[20px] pb-[10px] text-[#5D5D5D] font-bold text-base text-center">সানোয়ার আলম</h2>
+      <p class="text-[#5D5D5D] text-base font-normal text-center">সদস্য</p>
+    </div>
+  </a>
+  <a href="/pages/member-identity.html" class="w-full block">
+    <div>
+      <img src="../images/committee/president.png" alt="Member" class="w-full object-cover" />
+      <h2 class="pt-[20px] pb-[10px] text-[#5D5D5D] font-bold text-base text-center">সানোয়ার আলম</h2>
+      <p class="text-[#5D5D5D] text-base font-normal text-center">সদস্য</p>
+    </div>
+  </a>
+  <a href="/pages/member-identity.html" class="w-full block">
+    <div>
+      <img src="../images/committee/president.png" alt="Member" class="w-full object-cover" />
+      <h2 class="pt-[20px] pb-[10px] text-[#5D5D5D] font-bold text-base text-center">সানোয়ার আলম</h2>
+      <p class="text-[#5D5D5D] text-base font-normal text-center">সদস্য</p>
+    </div>
+  </a>
+
   <!-- Row 2 -->
-  <div class="w-full">
-    <img src="../images/committee/president.png" alt="Member" class="w-full object-cover" />
-    <h2 class="pt-[20px] pb-[10px] text-[#5D5D5D] font-bold text-base text-center">সানোয়ার আলম</h2>
-    <p class="text-[#5D5D5D] text-base font-normal text-center">সদস্য</p>
-  </div>
-  <div class="w-full">
-    <img src="../images/committee/president.png" alt="Member" class="w-full object-cover" />
-    <h2 class="pt-[20px] pb-[10px] text-[#5D5D5D] font-bold text-base text-center">সানোয়ার আলম</h2>
-    <p class="text-[#5D5D5D] text-base font-normal text-center">সদস্য</p>
-  </div>
-  <div class="w-full">
-    <img src="../images/committee/president.png" alt="Member" class="w-full object-cover" />
-    <h2 class="pt-[20px] pb-[10px] text-[#5D5D5D] font-bold text-base text-center">সানোয়ার আলম</h2>
-    <p class="text-[#5D5D5D] text-base font-normal text-center">সদস্য</p>
-  </div>
-  <div class="w-full">
-    <img src="../images/committee/president.png" alt="Member" class="w-full object-cover" />
-    <h2 class="pt-[20px] pb-[10px] text-[#5D5D5D] font-bold text-base text-center">সানোয়ার আলম</h2>
-    <p class="text-[#5D5D5D] text-base font-normal text-center">সদস্য</p>
-  </div>
-  <div class="w-full">
-    <img src="../images/committee/president.png" alt="Member" class="w-full object-cover" />
-    <h2 class="pt-[20px] pb-[10px] text-[#5D5D5D] font-bold text-base text-center">সানোয়ার আলম</h2>
-    <p class="text-[#5D5D5D] text-base font-normal text-center">সদস্য</p>
-  </div>
-  <div class="w-full">
-    <img src="../images/committee/president.png" alt="Member" class="w-full object-cover" />
-    <h2 class="pt-[20px] pb-[10px] text-[#5D5D5D] font-bold text-base text-center">সানোয়ার আলম</h2>
-    <p class="text-[#5D5D5D] text-base font-normal text-center">সদস্য</p>
-  </div>
+  <a href="/pages/member-identity.html" class="w-full block">
+    <div>
+      <img src="../images/committee/president.png" alt="Member" class="w-full object-cover" />
+      <h2 class="pt-[20px] pb-[10px] text-[#5D5D5D] font-bold text-base text-center">সানোয়ার আলম</h2>
+      <p class="text-[#5D5D5D] text-base font-normal text-center">সদস্য</p>
+    </div>
+  </a>
+  <a href="/pages/member-identity.html" class="w-full block">
+    <div>
+      <img src="../images/committee/president.png" alt="Member" class="w-full object-cover" />
+      <h2 class="pt-[20px] pb-[10px] text-[#5D5D5D] font-bold text-base text-center">সানোয়ার আলম</h2>
+      <p class="text-[#5D5D5D] text-base font-normal text-center">সদস্য</p>
+    </div>
+  </a>
+  <a href="/pages/member-identity.html" class="w-full block">
+    <div>
+      <img src="../images/committee/president.png" alt="Member" class="w-full object-cover" />
+      <h2 class="pt-[20px] pb-[10px] text-[#5D5D5D] font-bold text-base text-center">সানোয়ার আলম</h2>
+      <p class="text-[#5D5D5D] text-base font-normal text-center">সদস্য</p>
+    </div>
+  </a>
+  <a href="/pages/member-identity.html" class="w-full block">
+    <div>
+      <img src="../images/committee/president.png" alt="Member" class="w-full object-cover" />
+      <h2 class="pt-[20px] pb-[10px] text-[#5D5D5D] font-bold text-base text-center">সানোয়ার আলম</h2>
+      <p class="text-[#5D5D5D] text-base font-normal text-center">সদস্য</p>
+    </div>
+  </a>
+  <a href="/pages/member-identity.html" class="w-full block">
+    <div>
+      <img src="../images/committee/president.png" alt="Member" class="w-full object-cover" />
+      <h2 class="pt-[20px] pb-[10px] text-[#5D5D5D] font-bold text-base text-center">সানোয়ার আলম</h2>
+      <p class="text-[#5D5D5D] text-base font-normal text-center">সদস্য</p>
+    </div>
+  </a>
+  <a href="/pages/member-identity.html" class="w-full block">
+    <div>
+      <img src="../images/committee/president.png" alt="Member" class="w-full object-cover" />
+      <h2 class="pt-[20px] pb-[10px] text-[#5D5D5D] font-bold text-base text-center">সানোয়ার আলম</h2>
+      <p class="text-[#5D5D5D] text-base font-normal text-center">সদস্য</p>
+    </div>
+  </a>
 </div>
+
 
  
             <!-- committee gallery small-->
@@ -547,7 +579,7 @@
                       <div class="swiper-slide">
                         <div class="flex flex-col items-center justify-center">
                           <img
-                            src="../../images/committee/president.png"
+                            src="../images/committee/president.png"
                             alt=""
                             class="h-full w-full object-cover rounded-lg"
                           />
@@ -646,101 +678,21 @@
     </section>
     <!-- আমাদের শক্তি, আমাদের কমিটি -- tabs -->
 
-   
-
-    <section
-      class="w-full pt-4 md:py-20 md:pb-20 px-4 md:px-0 bg-cover bg-center relative bg-[#F4F4F4]"
-    >
-      <div class="container mx-auto">
-        <div class="md:flex justify-start items-center gap-24 xl:gap-16">
-          <div class="w-full md:w-[540px] lg:w-[700px] pt-8 md:pt-0">
-            <!-- <h2
-              class="font-semibold text-2xl md:text-[36px] text-[#006A4E] md:leading-12 lg:leading-[100%] tracking-[0%] font-liador"
-            >
-              জুলাই বিপ্লব: এক গৌরবময় অধ্যায়
-            </h2> -->
-
-            <p
-              class="leading-[30px] font-normal md:text-base text-md tracking-tight text-[#5D5D5D] font-liador pt-6"
-            >
-              বাংলাদেশ জাতীয়তাবাদী ছাত্রদল (জেসিডি) গণতন্ত্র, স্বাধীনতা এবং
-              শিক্ষার্থীদের অধিকার রক্ষার লক্ষ্যে প্রতিষ্ঠিত হয়| এর যাত্রা শুরু
-              হয় ১৯৭৯ সালে, যখন প্রথম কমিটি গঠিত হয়| প্রতিষ্ঠালগ্ন থেকে জেসিডি
-              দেশের প্রতিটি আন্দোলন ও সংগ্রামে অগ্রণী ভূমিকা পালন করেছে|
-            </p>
-            <p
-              class="leading-[30px] font-normal md:text-base text-md tracking-tight text-[#5D5D5D] font-liador pt-6"
-            >
-              প্রতিটি সময়ের প্রেক্ষাপটে সংগঠনের নেতৃত্বে এসেছে যোগ্য ও দক্ষ
-              নেতাকর্মীরা, যারা জাতীয়তাবাদী আদর্শে উজ্জীবিত হয়ে দেশ ও জনগণের
-              কল্যাণে কাজ করেছেন। কেন্দ্রীয় কমিটি থেকে শুরু করে ঢাকা -পশ্চিম
-              শাখার ইউনিট ও ওয়ার্ড পর্যায় পর্যন্ত প্রতিটি কমিটি সংগঠনের
-              নীতিমালা অনুসরণ করে দায়িত্ব পালন করে আসছে।
-            </p>
-          </div>
-
-          <img
-            src="/../images/khaleda-zia-image.svg"
-            class="md:w-[40%] lg:max-w-full lg:w-[422px] lg:h-[416px]"
-          />
-        </div>
-      </div>
-    </section>
-
-    <!-- prothistar suchonaa -->
-    <section
-      class="w-full px-4 md:px-0 bg-cover bg-center relative bg-[#F4F4F4] pb-10 md:pb14 lg:pb-20"
-    >
-      <div class="container mx-auto">
-        <div class="md:flex justify-start items-center gap-14 xl:gap-16">
-          <img
-            src="/../images/ziaa-program-image.svg"
-            class="md:w-[40%] lg:max-w-full lg:w-[422px] lg:h-[416px]"
-          />
-
-          <div class="w-full md:w-[540px] lg:w-[700px] pt-8 md:pt-0">
-            <p
-              class="leading-[30px] font-normal md:text-base text-md tracking-tight text-[#5D5D5D] font-liador pt-6"
-            >
-              এখানে ১ম কমিটি থেকে শুরু করে বর্তমান কমিটি পর্যন্ত সকল কমিটির
-              তালিকা ও তাদের প্রধান কার্যক্রমের সংক্ষিপ্ত বিবরণ দেওয়া হয়েছে।
-              প্রতিটি কমিটি দেশের বিভিন্ন পর্যায়ে গণতান্ত্রিক আন্দোলন,
-              শিক্ষার্থীদের অধিকার রক্ষা এবং সামাজিক উন্নয়নে গুরুত্বপূর্ণ অবদান
-              রেখেছে।
-            </p>
-            <ul
-              class="leading-[30px] font-normal md:text-base text-md tracking-tight text-[#5D5D5D] font-liador pt-4"
-            >
-              <li>
-                ১. ১ম কমিটি (১৯৭৯-১৯৮৫): প্রতিষ্ঠাকালীন সময়ে সংগঠনের ভিত্তি
-                স্থাপন।
-              </li>
-              <li>
-                ২. ২য় কমিটি (১৯৮৬-১৯৯২): গণতন্ত্র পুনরুদ্ধারের আন্দোলনে
-                গুরুত্বপূর্ণ ভূমিকা।
-              </li>
-              <li>
-                ৩. ৩য় কমিটি (১৯৯৩-২০০০): শিক্ষার্থীদের অধিকার রক্ষা এবং
-                সাংগঠনিক বিস্তার।
-              </li>
-              <li>
-                ৪. ৪র্থ কমিটি (২০০১-২০১০): সামাজিক ও রাজনৈতিক ক্ষেত্রে শক্তিশালী
-                উপস্থিতি।
-              </li>
-              <li>
-                ৫. ৫ম কমিটি (২০১১-২০২০): সমসাময়িক চ্যালেঞ্জ মোকাবিলায় সাহসী
-                নেতৃত্ব।
-              </li>
-              <li>
-                ৬.বর্তমান কমিটি (২০২১-বর্তমান): নতুন প্রজন্মকে নেতৃত্বে এনে
-                ভবিষ্যতের জন্য সংগঠনকে প্রস্তুত করা।
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
+ <section class="md:pt-20 pt-14 px-4 md:px-0 bg-[#F4F4F4]">
+  <div class="container mx-auto">
+    <!-- Swiper Container -->
+      <h3 class="text-base md:text-lg lg:text-xl font-semibold py-2 md:py-2 lg:py-2 font-liador text-[#006A4E] text-center">নোটিশ ও প্রেস রিলিজ</h3>
+     
+   <div class="swiper mySwiper">
+    <div class="swiper-wrapper" id="notice-board-container"></div>
+    <!-- Optional navigation -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+  </div>
+ </section>
+    <!--  -->
+ 
     <!-- join our  community -->
     <section class="md:py-20 py-14 px-4 md:px-0 bg-[#FEFEFE]">
       <div
@@ -962,7 +914,7 @@
             </div>
 
             <button
-              class="py-4 px-[34px] bg-[#F42A40] rounded-[30px] font-liador md:text-[16px] text-sm text-[#FEFEFE] mt-8 md:mt-12"
+              class="py-4 px-5 md:px-[34px] bg-[#F42A40] rounded-[30px] font-liador md:text-[16px] text-sm text-[#FEFEFE] mt-8 md:mt-12 tracking-tight"
             >
               সরাসরি যোগাযোগ করুন
             </button>
@@ -1002,35 +954,6 @@
     <!-- js -- card slider -- js -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-    <script>
-      var swiper = new Swiper(".multiple-slide-carousel", {
-        loop: true,
-        slidesPerView: 3,
-        spaceBetween: 20,
-        navigation: {
-          nextEl: ".multiple-slide-carousel .swiper-button-next",
-          prevEl: ".multiple-slide-carousel .swiper-button-prev",
-        },
-        breakpoints: {
-          1920: {
-            slidesPerView: 5,
-            spaceBetween: 30,
-          },
-          1280: {
-            slidesPerView: 4,
-            spaceBetween: 30,
-          },
-          1025: {
-            slidesPerView: 4,
-            spaceBetween: 30,
-          },
-          990: {
-            slidesPerView: 2,
-            spaceBetween: 0,
-          },
-        },
-      });
-    </script>
 
     <!-- tab js -->
     <script>
@@ -1127,4 +1050,110 @@
     src="https://kit.fontawesome.com/ab933b7f51.js"
     crossorigin="anonymous"
   ></script>
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+    const container = document.getElementById("notice-board-container");
+
+    const cardHTML = `
+      <div class="swiper-slide">
+        <div class="max-w-sm overflow-hidden bg-white rounded-lg shadow-sm group bg-[#FEFEFE] mt-[30px] md:mt-[40px] lg:mt-[56px] xl:mt-[60px]">
+          <!-- Image Section -->
+          <div class="relative">
+            <img
+              src="../images/victoryday.png"
+              alt="Memorial gathering with floral arrangements"
+              width="384"
+              height="200"
+              class="w-full object-cover transform transition-transform duration-500 group-hover:scale-110"
+            />
+            <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2">
+              <div class="w-16 h-16 rounded-full bg-white p-0">
+                <img src="../images/bnp-logo.svg" alt="" />
+              </div>
+            </div>
+          </div>
+
+          <!-- Text Section -->
+          <div class="pt-12 px-4">
+            <div class="border-b border-[#BBBBBB] font-liador">
+              <div class="text-[#5D5D5D] font-normal text-base md:text-[18px] font-liador">
+                ২৬ মার্চ ২০২৫, সকাল ৯:০০ টা
+              </div>
+
+              <h3 class="font-normal text-[#383838] text-lg md:text-xl mt-3.5">
+                স্বাধীনতা দিবস পালন ও শহীদদের স্মরণসভা
+              </h3>
+
+              <div class="text-[#5D5D5D] font-normal text-sm md:text-base my-4">
+                স্থান: জাতীয় স্মৃতিসৌধ, সাভার
+              </div>
+            </div>
+
+            <div class="flex justify-start">
+              <a
+                href="#"
+                class="inline-flex text-base md:text-[18px] items-center text-[#F42A40] font-medium py-4 transform transition-transform duration-200 hover:scale-105"
+              >
+                বিস্তারিত দেখুন
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M14.43 5.92993L20.5 11.9999L14.43 18.0699"
+                    stroke="#F42A40"
+                    stroke-width="1.5"
+                    stroke-miterlimit="10"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M3.5 12H20.33"
+                    stroke="#F42A40"
+                    stroke-width="1.5"
+                    stroke-miterlimit="10"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    `;
+
+    for (let i = 0; i < 5; i++) {
+      container.innerHTML += cardHTML;
+    }
+
+    // Swiper initialization
+    new Swiper(".mySwiper", {
+      loop: true,
+      slidesPerView: 1,
+      spaceBetween: 16,
+      breakpoints: {
+        640: {
+          slidesPerView: 1.5,
+        },
+        768: {
+          slidesPerView: 2,
+        },
+        1024: {
+          slidesPerView: 3,
+        },
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+
+  <!--  -->
+
 </html>
