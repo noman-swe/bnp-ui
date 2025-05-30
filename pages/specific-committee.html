@@ -883,7 +883,7 @@
                 <div class="   p-10">
                   <h2 class=" font-liador font-semibold text-[30px] text-[#000000] mb-2">আমাদের সাথে যোগাযোগ করুন</h2>
                   <h4 class=" font-liador font-normal text-base text-[#000000] mb-2">আপনার প্রতিটি কথাই আমাদের কাছে গুরুত্ত্বপূর্ন</h4>
-                  <form action="" class="lg:mt-10 md:mt-8 mt-6">
+                  <form id="contactForm" class="lg:mt-10 md:mt-8 mt-6">
                     <div class="flex gap-4">
                       <input
                         type="text"
@@ -903,8 +903,8 @@
                     <div class="flex flex-col gap-4 mt-4">
                       <input
                         type="text"
-                        id="fullName"
-                        name="fullName"
+                        id="number"
+                        name="number"
                         class="mt-1 block w-full px-3 py-[14px] bg-[#E8E8E8] rounded-[5px] sm:text-sm lg:text-base ps-2 text-[#00000099]"
                         placeholder="ফোন নম্বর"
                       />
@@ -922,6 +922,26 @@
                       আমাদের পাঠান
                     </button>
                   </form>
+                  <!-- <p class="mt-4 text-[#5D5D5D] font-liador text-sm">
+                    আপনার বার্তা পাঠানোর জন্য ধন্যবাদ। আমরা যত দ্রুত সম্ভব
+                    আপনার সাথে যোগাযোগ করব।
+                  </p> -->
+
+<script>
+  document.getElementById('contactForm').addEventListener('submit', function (e) {
+    e.preventDefault(); // Prevent page reload
+
+    const formData = {
+      name: e.target.name.value,
+      address: e.target.address.value,
+      number: e.target.number.value,
+      message: e.target.message.value
+    };
+
+    console.log('Form Data:', formData);
+  });
+</script>
+
                 </div>
                 <div class="   ">
                   <img src="/images/contact-image.svg" alt="">
